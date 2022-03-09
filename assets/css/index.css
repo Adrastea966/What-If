@@ -1,0 +1,1026 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:wght@100;400;500;700&display=swap');
+
+/* Variables */
+
+:root {
+    --negro: #000000;
+    --blanco: #fff;
+    --rosa: #ff1a6d;
+    --violeta: #6300ff;
+    --amarillo: #fefe00;
+    --font-primary: "Open Sans", sans-serif;
+    --font-secundary: "Roboto", cursive;
+}
+
+/* Normalize */
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Globals */
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+    color: var(--negro);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Helpers */
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* Header and navbar */
+
+body {
+    background-color: var(--blanco);
+}
+
+.menu .link2:hover {
+    color: var(--rosa);
+    transition: ease-in-out 0.3s;
+}
+
+.menu .link3:hover {
+    color: var(--rosa);
+    transition: ease-in-out 0.3s;
+}
+
+.menu .link4:hover {
+    color: var(--violeta);
+    transition: ease-in-out 0.3s;
+}
+
+.menu .link5:hover {
+    color: var(--amarillo);
+    transition: ease-in-out 0.3s;
+}
+
+.link {
+    font-size: 1.4em;
+    padding: 1rem;
+    position: relative;
+}
+
+.navbar .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--blanco);
+    padding: 15px;
+}
+
+.navbar .menu .item:hover .sub-menu {
+    display: block;
+}
+
+.menu .sub-menu a {
+    font-size: 1.3em;
+}
+
+.menu .sub-menu li {
+    padding-bottom: 8px;
+}
+
+.menu .sub-menu a:hover {
+    color: #baafe8;
+}
+
+.logo {
+    width: 130px;
+    height: 60px;
+}
+
+.item div {
+    padding-top: 9px;
+    padding-right: 10px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+}
+
+.navbar {
+    background: var(--blanco);
+    height: 80px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-label,
+.nav-input {
+    display: none;
+}
+
+.nav-menu {
+    flex-basis: 35%;
+    font-weight: 500;
+}
+
+.nav-menu .menu {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+
+/* Seccion nosotros */
+
+.principal {
+    background-color: var(--blanco);
+    height: 600px;
+    padding-top: 80px;
+}
+
+.principal .div1 ul {
+    padding: 10px 0;
+}
+
+.principal .div1 ul li {
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 8px;
+    display: inline;
+}
+
+.principal .div1 ul li a:hover {
+    color: var(--rosa);
+    transition: ease-in-out 0.3s;
+}
+
+.principal .div1 h3 {
+    color: var(--rosa);
+    font-size: 2.5em;
+}
+
+.principal .div1 p {
+    font-size: 1.5em;
+}
+
+.principal .flex-row {
+    align-items: center;
+    padding: 20px;
+}
+
+.div1 p {
+    padding: 20px 0px;
+}
+
+.principal h3 {
+    color: var(--rosa);
+}
+
+
+.home-img {
+    width: 108rem;
+    height: 70rem;
+    padding: 0 15px;
+}
+
+
+.div2 .img-nosotros {
+    width: 400px;
+    height: 400px;
+}
+
+/* Seccion equipo */
+
+.seccion-equipo .flex-row {
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seccion-equipo {
+    background-color: var(--blanco);
+    height: 600px;
+
+}
+
+.seccion-equipo .div-equipo {
+    width: 565px;
+    padding: 20px 0;
+}
+
+.div-equipo h3 {
+    color: var(--violeta);
+    font-size: 2.5em;
+    padding: 15px 0;
+}
+
+.div-equipo li a {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.div-equipo li a:hover {
+    color: var(--violeta);
+    transition: ease-in-out 0.3s;
+}
+
+.div-equipo p {
+    font-size: 1.5em;
+}
+
+.equipo .div-equipo2 {
+    width: 565px;
+}
+
+.div-equipo li {
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+}
+
+
+.img-equipo {
+    width: 400px;
+    height: 400px;
+}
+
+/* Seccion productos */
+
+.productos {
+    background-image: url(../image/degradado.jpg);
+    background-size: contain;
+    width: 100%;
+    padding: 30px 0;
+    height: 100%;
+}
+
+.div-productos h3 {
+    font-size: 2.5em;
+    padding-left: 50px;
+    color: var(--amarillo);
+    font-weight: 700;
+}
+
+.div-productos2 img {
+    width: 26.5em;
+    padding: 2em;
+}
+
+.div-productos2 ul li {
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+.div-productos2 ul li a:hover {
+    color: var(--amarillo);
+    transition: ease-in-out 0.3s;
+}
+
+
+/* Seccion contactos */
+
+.contacto {
+    background-color: var(--blanco);
+    width: 108em;
+    height: 750px;
+}
+
+.seccion-contacto {
+    max-width: 100%;
+    padding: 90px 0;
+}
+
+.div-contacto h3 {
+    color: var(--rosa);
+    font-size: 2.5em;
+    font-weight: 500;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+.div-contacto h4 {
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+
+.div-contacto p {
+    font-size: 1.5em;
+}
+
+.div-contacto2 {
+    padding: 80px 0;
+}
+
+
+/* Footer */
+
+.footer {
+    padding-top: 120px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 80px;
+    background-color: var(--amarillo);
+}
+
+
+.footer h4 {
+    font-weight: 700;
+    font-size: 1.7em;
+    padding-bottom: 20px;
+}
+
+.footer .div-footer div {
+    width: 450px;
+}
+
+
+.footer .div-footer {
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: 1.4em;
+    display: inline-block;
+}
+
+.footer .red-social {
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 10px;
+    padding-bottom: 0;
+    justify-content: flex-end;
+}
+
+.red-social a {
+    flex-basis: 3%;
+}
+
+.red-social img {
+    height: 25px;
+    width: 25px;
+}
+
+.copy {
+    padding-top: 120px;
+    justify-content: center;
+}
+
+/* ----------PÁGINA "TRABAJOS-WORKS"---------- */
+
+.body-trabajos {
+    background-image: url(../image/FondoTrabajos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.works h1 {
+    color: var(--rosa);
+    text-align: center;
+    padding-top: 150px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.div-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    padding: 50px;
+    gap: 15px;
+}
+
+.item-img {
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.homero {
+    background-image: url(../image/MateHomero.png);
+}
+
+.corazones {
+    background-image: url(../image/ArosCorazón.png);
+}
+
+.negro {
+    background-image: url(../image/MacetaNegra.png);
+}
+
+.rojo {
+    background-image: url(../image/MacetaParaguas.png);
+}
+
+.item-img:hover {
+    filter: opacity(0.9);
+    transform: scale(1.05);
+}
+
+
+/* ----------PÁGINA "Conocenos/know-us"---------- */
+
+.titulo-conocenos h1 {
+    color: var(--violeta);
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.body {
+    background-image: url(../image/colores.jpg);
+    background-size: cover;
+}
+
+
+.foto {
+    width: 300px;
+    height: 350px;
+    padding: 30px;
+    text-align: center;
+    background-color: var(--blanco);
+    border-style: inset;
+}
+
+.foto .profile {
+    width: 200px;
+    height: 250px;
+}
+
+.victor {
+    padding-bottom: 20px;
+}
+
+.tomas {
+    padding-bottom: 20px;
+}
+
+.goyo {
+    padding-bottom: 20px;
+}
+
+/* ----------PÁGINA "Nuestras Herramientas/our-tools"---------- */
+
+.herramientas-trabajo h1 {
+    color: var(--amarillo);
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.fotos-herramientas {
+    display: flex;
+    flex-direction: column;
+}
+
+.fotos-herramientas img {
+    width: 360px;
+    height: 220px;
+    padding: 15px;
+}
+
+/* ----------PÁGINA "TIENDA/shop"---------- */
+
+.instagram {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+}
+
+.seccion-instagram {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    color: gray;
+    text-align: center;
+    padding-left: 90px;
+    font-size: 1.4em;
+}
+
+.seccion-instagram div {
+    display: inline-block;
+}
+
+.link-instagram {
+    padding: 20px;
+    display: inline-block;
+}
+
+.titulo-tienda h1 {
+    color: var(--violeta);
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+    padding: 50px;
+    gap: 9px;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.05);
+}
+
+.img1 {
+    background-image: url(../image/maceta-rosa.jpg);
+}
+
+.img2 {
+    background-image: url(../image/maceta-verde.jpg);
+}
+
+.img3 {
+    background-image: url(../image/meceta-naranja.jpg);
+}
+
+.img4 {
+    background-image: url(../image/bob.jpg);
+}
+
+.img5 {
+    background-image: url(../image/centro-mesa.jpg);
+}
+
+.img6 {
+    background-image: url(../image/lapicero.jpg);
+}
+
+/* Media */
+
+
+@media screen and (max-width:1200px) {
+
+    .navbar {
+        padding-top: 20px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .container {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    .home-img {
+        width: 103rem;
+        height: 70rem;
+        padding-top: 0;
+        padding-right: 20px;
+        padding-bottom: 80px;
+        padding-left: 20px;
+    }
+
+    .div-productos h3 {
+        text-align: center;
+    }
+
+    .div-productos2 {
+        height: 26rem;
+        padding-top: 40px;
+        padding-left: 80px;
+        padding-bottom: 40px;
+        padding-right: 80px;
+    }
+
+    .div-productos2 img {
+        width: 20em;
+    }
+
+    .contacto {
+        width: max-content;
+    }
+
+    .seccion-contacto {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+
+
+    .container {
+        max-width: 904px;
+        margin: 0 auto;
+    }
+
+    .home-img {
+        width: 90rem;
+        height: 70rem;
+        padding: 80px 20px;
+    }
+
+    .div-productos h3 {
+        text-align: center;
+    }
+
+    .div-productos2 {
+        height: 26rem;
+        padding: 30px;
+    }
+
+    .div-productos2 img {
+        width: 20em;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+
+
+    .container {
+        max-width: 780px;
+        margin: 0 auto;
+    }
+
+    .home-img {
+        width: 80rem;
+        height: 60rem;
+        padding: 50px 20px;
+    }
+
+    .div-productos h3 {
+        text-align: center;
+    }
+
+    .div-productos2 {
+        height: 26rem;
+        padding: 30px;
+    }
+
+    .div-productos2 img {
+        width: 17em;
+    }
+
+    .footer .div-footer div {
+        width: 350px;
+    }
+
+    .footer p {
+        font-size: 1.2em;
+    }
+}
+
+
+@media screen and (max-width:820px) {
+
+
+    .home-img {
+        width: 78rem;
+        height: 60rem;
+        padding: 50px 20px;
+    }
+
+}
+
+@media screen and (max-width:780px) {
+
+
+    .container {
+        max-width: 660px;
+        margin: 0 auto;
+    }
+
+    .home-img {
+        width: 65.9rem;
+        height: 48rem;
+        align-items: center;
+    }
+
+    .principal .div1 p {
+        font-size: 1.3em;
+    }
+
+    .div-equipo p {
+        font-size: 1.3em;
+    }
+
+
+    .div-productos h3 {
+        text-align: center;
+    }
+
+    .div-productos2 {
+        height: 26rem;
+        padding: 30px;
+    }
+
+    .div-productos2 ul li a {
+        align-items: flex-start;
+    }
+
+    .maceta-inicio {
+        display: none;
+    }
+
+    .div-productos2 img {
+        width: 19em;
+    }
+
+    .nav-label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-image: linear-gradient(to top, #f9ffac, #ffda8e, #ffb19b, #ff90c8, #e78dff);
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .nav-input:checked+.nav-menu {
+        clip-path: circle(100% at center);
+    }
+
+}
+
+@media screen and (max-width:660px) {
+
+
+    .container {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .home-img {
+        width: 53.9rem;
+        height: 45rem;
+        align-items: center;
+    }
+
+    .img-nosotros {
+        display: none;
+    }
+
+    .principal {
+        padding-top: 90px;
+        height: 600px;
+    }
+
+    .principal h3 {
+        text-align: center;
+    }
+
+    .principal .div1 ul {
+        text-align: right;
+    }
+
+    .img-equipo {
+        display: none;
+    }
+
+    .seccion-equipo h3 {
+        text-align: center;
+    }
+
+    .div-equipo .botones-equipo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 30px;
+    }
+
+    .div-productos h3 {
+        text-align: center;
+    }
+
+    .div-productos2 {
+        padding-left: 90px;
+    }
+
+    .productos .aros-img {
+        display: none;
+    }
+
+    .footer .footer-texto {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+
+    .container {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .home-img {
+        width: 43rem;
+        height: 35rem;
+        align-items: center;
+    }
+
+    .principal h3 {
+        padding: 15px 0;
+    }
+
+    .div-equipo p {
+        padding: 20px 0;
+    }
+
+    .div-productos h3 {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .productos {
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 120px;
+    }
+
+    .div-productos2 {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .div-productos2 .flex-row {
+        justify-content: center;
+    }
+
+    .div-productos2 ul li {
+        padding-left: 0;
+    }
+
+    .div-productos2 .lapicero-img {
+        display: none;
+    }
+
+
+    .div-productos2 .florero-img {
+        justify-content: center;
+        width: 26rem;
+    }
+
+
+    .productos .aros-img {
+        display: none;
+    }
+
+    .footer .footer-texto {
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (max-width:440px) {
+
+
+    .container {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .home-img {
+        width: 35rem;
+        height: 30rem;
+        align-items: center;
+    }
+
+    .principal {
+        padding-top: 50px;
+    }
+
+    .principal .div1 h3 {
+        font-size: 2em;
+    }
+
+    .div-equipo h3 {
+        font-size: 2em;
+    }
+
+    .div-productos h3 {
+        font-size: 2em;
+    }
+
+    .div-productos2 {
+        padding-left: 40px;
+        padding-right: 30px;
+        width: 300px;
+    }
+
+    .div-productos2 .florero-img {
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media screen and (max-width:360px) {
+
+        .container {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .home-img {
+            width: 30rem;
+            height: 30rem;
+            align-items: center;
+            padding: 0;
+            position: center;
+            padding-top: 100px;
+        }
+
+        .principal .div1 ul {
+            text-align: center;
+        }
+
+        .div-equipo .botones-equipo a {
+            font-size: 1.3em;
+        }
+    }
+}
+
+/*Tienda*/
+
+@media screen and (max-width:440px) {
+
+    .seccion-instagram {
+        padding: 10px;
+    }
+}
+
+/*Herramientas*/
+
+@media screen and (max-width:440px) {
+    .fotos-herramientas img {
+        width: 330px;
+        height: 215px;
+        padding-right: 40px;
+    }
+}
