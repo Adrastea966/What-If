@@ -30,6 +30,7 @@ html {
     font-size: 62.5%;
     font-family: var(--font-primary);
     color: var(--negro);
+    scroll-behavior: smooth;
 }
 
 a {
