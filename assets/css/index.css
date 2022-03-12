@@ -28,19 +28,39 @@
 
 html {
     font-size: 62.5%;
-    font-family: var(--font-primary);
+    font-family: var(--font-primary) !important;
     color: var(--negro);
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--blanco);
+    font-family: var(--font-primary);
 }
 
 a {
     text-decoration: none;
     color: inherit;
-
 }
 
 ul {
     list-style-type: none;
+    padding-left: 0;
+    
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2; 
 }
 
 /* Helpers */
@@ -61,9 +81,7 @@ ul {
 
 /* Header and navbar */
 
-body {
-    background-color: var(--blanco);
-}
+
 
 .menu .link2:hover {
     color: var(--rosa);
@@ -170,6 +188,10 @@ body {
     padding-top: 80px;
 }
 
+.principal .div1 {
+    width: 500px;
+}
+
 .principal .div1 ul {
     padding: 10px 0;
 }
@@ -198,21 +220,21 @@ body {
 .principal .flex-row {
     align-items: center;
     padding: 20px;
+    justify-content: space-around;
 }
 
 .div1 p {
     padding: 20px 0px;
 }
 
+
+
 .principal h3 {
     color: var(--rosa);
 }
 
-
 .home-img {
-    width: 108rem;
-    height: 70rem;
-    padding: 0 15px;
+    background-image: url(../image/WhatIf.jpg);
 }
 
 
@@ -295,8 +317,8 @@ body {
 }
 
 .div-productos2 img {
-    width: 26.5em;
-    padding: 2em;
+    width: 25rem;
+    padding: 2rem;
 }
 
 .div-productos2 ul li {
@@ -553,24 +575,24 @@ body {
 }
 
 #tienda {
-   position: absolute;
-   top: 25%;
-   left: 50%;
-   transform:translate(-50%, -50%);
-   animation: fill 0.5s ease forwards 2.6s;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill 0.5s ease forwards 2.6s;
 }
 
 #tienda path:nth-child(1) {
     stroke-dasharray: 410;
     stroke-dashoffset: 410;
-    animation: line-anim 3s ease forwards 0.3s;  
+    animation: line-anim 3s ease forwards 0.3s;
 }
 
 
 #tienda path:nth-child(2) {
     stroke-dasharray: 200;
     stroke-dashoffset: 200;
-    animation: line-anim 3s ease forwards 0.3s;  
+    animation: line-anim 3s ease forwards 0.3s;
 }
 
 #tienda path:nth-child(3) {
@@ -606,7 +628,7 @@ body {
 @keyframes line-anim {
 
     to {
-        stroke-dashoffset:0;
+        stroke-dashoffset: 0;
     }
 
 }
@@ -614,11 +636,11 @@ body {
 @keyframes fill {
 
     from {
-        fill:transparent;
+        fill: transparent;
     }
 
     to {
-        fill:#6300ff;
+        fill: #6300ff;
     }
 
 }
@@ -686,15 +708,6 @@ body {
         margin: 0 auto;
     }
 
-    .home-img {
-        width: 103rem;
-        height: 70rem;
-        padding-top: 0;
-        padding-right: 20px;
-        padding-bottom: 80px;
-        padding-left: 20px;
-    }
-
     .div-productos h3 {
         text-align: center;
     }
@@ -735,12 +748,6 @@ body {
         margin: 0 auto;
     }
 
-    .home-img {
-        width: 90rem;
-        height: 70rem;
-        padding: 80px 20px;
-    }
-
     .div-productos h3 {
         text-align: center;
     }
@@ -764,11 +771,6 @@ body {
         margin: 0 auto;
     }
 
-    .home-img {
-        width: 80rem;
-        height: 60rem;
-        padding: 50px 20px;
-    }
 
     .div-productos h3 {
         text-align: center;
@@ -793,29 +795,12 @@ body {
 }
 
 
-@media screen and (max-width:820px) {
-
-
-    .home-img {
-        width: 78rem;
-        height: 60rem;
-        padding: 50px 20px;
-    }
-
-}
-
 @media screen and (max-width:780px) {
 
 
     .container {
         max-width: 660px;
         margin: 0 auto;
-    }
-
-    .home-img {
-        width: 65.9rem;
-        height: 48rem;
-        align-items: center;
     }
 
     .principal .div1 p {
@@ -882,12 +867,6 @@ body {
         margin: 0 auto;
     }
 
-    .home-img {
-        width: 53.9rem;
-        height: 45rem;
-        align-items: center;
-    }
-
     .img-nosotros {
         display: none;
     }
@@ -945,11 +924,6 @@ body {
         margin: 0 auto;
     }
 
-    .home-img {
-        width: 43rem;
-        height: 35rem;
-        align-items: center;
-    }
 
     .principal h3 {
         padding: 15px 0;
@@ -1012,11 +986,6 @@ body {
         margin: 0 auto;
     }
 
-    .home-img {
-        width: 35rem;
-        height: 30rem;
-        align-items: center;
-    }
 
     .principal {
         padding-top: 50px;
@@ -1050,15 +1019,6 @@ body {
         .container {
             max-width: 300px;
             margin: 0 auto;
-        }
-
-        .home-img {
-            width: 30rem;
-            height: 30rem;
-            align-items: center;
-            padding: 0;
-            position: center;
-            padding-top: 100px;
         }
 
         .principal .div1 ul {
