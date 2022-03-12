@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What If</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/index.css">
@@ -93,7 +94,8 @@
             <div class="flex-row">
 
                 <div class="div1">
-                    <article>
+                    <article data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">
                         <h3>Un poco sobre nosotros</h3>
                         <p> ¡Hola! somos What If, una empresa de impresiones 3D
                             que tiene como objetivo poder realizar cualquier proyecto.
@@ -126,7 +128,8 @@
             <div class="flex-row">
 
                 <div class="div-equipo">
-                    <article>
+                    <article data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">
                         <h3>¿Quiénes somos?</h3>
                         <p>¿Te interesa saber quiénes participan en este emprendimiento? Hacé clic en "Conocenos" y
                             hechá un vistazo. También; si vas a "Nuestras herramientas", te contamos con que herramienta
@@ -194,7 +197,8 @@
             <div class="seccion-contacto">
                 <div class="div-contacto">
                     <article>
-                        <h3>Contactanos</h3>
+                        <h3 data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-center">Contactanos</h3>
                         <h4>Habla con nosotros</h4>
                         <p>Si tenes una consulta o te queres poner en contacto con nosotros, escribinos a nuestro email.
                         </p>
@@ -254,6 +258,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <!--Fin de footer-->
 
 </body>

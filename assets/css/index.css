@@ -46,7 +46,7 @@ a {
 ul {
     list-style-type: none;
     padding-left: 0;
-    
+
 }
 
 h3 {
@@ -60,7 +60,7 @@ h4 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-weight: 700;
-    line-height: 1.2; 
+    line-height: 1.2;
 }
 
 /* Helpers */
@@ -148,6 +148,7 @@ h4 {
     background: var(--blanco);
     height: 80px;
     position: fixed;
+    z-index: 1;
     right: 0;
     left: 0;
     padding: 10px;
@@ -184,12 +185,13 @@ h4 {
 
 .principal {
     background-color: var(--blanco);
-    height: 600px;
-    padding-top: 80px;
+    height: 700px;
+    padding-top: 200px;
 }
 
 .principal .div1 {
     width: 500px;
+    
 }
 
 .principal .div1 ul {
@@ -219,8 +221,11 @@ h4 {
 
 .principal .flex-row {
     align-items: center;
-    padding: 20px;
     justify-content: space-around;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
 }
 
 .div1 p {
@@ -239,8 +244,8 @@ h4 {
 
 
 .div2 .img-nosotros {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 
 /* Seccion equipo */
@@ -249,11 +254,15 @@ h4 {
     padding: 20px;
     align-items: center;
     justify-content: space-between;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
 }
 
 .seccion-equipo {
     background-color: var(--blanco);
-    height: 600px;
+    height: 700px;
 
 }
 
@@ -769,6 +778,11 @@ h4 {
     .container {
         max-width: 780px;
         margin: 0 auto;
+    }
+
+    .home-img {
+        padding-top: 150px;
+        
     }
 
 
