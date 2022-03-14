@@ -191,7 +191,7 @@ h4 {
 
 .principal .div1 {
     width: 500px;
-    
+
 }
 
 .principal .div1 ul {
@@ -232,7 +232,136 @@ h4 {
     padding: 20px 0px;
 }
 
+.boton {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+}
 
+.boton svg,
+.boton svg rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+}
+
+.boton svg rect {
+    stroke: var(--violeta);
+    stroke-width: 4;
+    transition: 1s;
+    stroke-dasharray: 300, 300;
+    stroke-dashoffset: 0;
+
+}
+
+.boton:hover svg rect {
+    stroke-dasharray: 40, 300;
+    stroke-dashoffset: 167;
+    stroke: var(--rosa);
+}
+
+.boton:hover {
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.boton2 {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.boton2 svg,
+.boton2 svg rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+}
+
+.boton2 svg rect {
+    stroke: var(--rosa);
+    stroke-width: 4;
+    transition: 1s;
+    stroke-dasharray: 310, 310;
+    stroke-dashoffset: 0;
+}
+
+.boton2:hover svg rect {
+    stroke-dasharray: 40, 300;
+    stroke-dashoffset: 150;
+    stroke: var(--amarillo);
+}
+
+.boton2:hover {
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.boton3 {
+    position: absolute;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.boton3 svg,
+.boton3 svg rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+}
+
+.boton3 svg rect {
+    stroke: var(--amarillo);
+    stroke-width: 4;
+    transition: 1s;
+    stroke-dasharray: 390, 390;
+    stroke-dashoffset: 0;
+}
+
+.boton3:hover svg rect {
+    stroke-dasharray: 50, 300;
+    stroke-dashoffset: 107;
+    stroke: var(--violeta);
+}
+
+.boton3:hover {
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.botones-equipo {
+    display: flex;
+    flex-direction: row;
+    gap: 190px;
+    padding-top: 30px;
+}
 
 .principal h3 {
     color: var(--rosa);
@@ -782,9 +911,15 @@ h4 {
 
     .home-img {
         padding-top: 150px;
-        
+
     }
 
+    .botones-equipo {
+        display: flex;
+        flex-direction: row;
+        gap: 130px;
+        padding-top: 30px;
+    }
 
     .div-productos h3 {
         text-align: center;
@@ -894,9 +1029,6 @@ h4 {
         text-align: center;
     }
 
-    .principal .div1 ul {
-        text-align: right;
-    }
 
     .img-equipo {
         display: none;
@@ -906,10 +1038,10 @@ h4 {
         text-align: center;
     }
 
-    .div-equipo .botones-equipo {
+    .botones-equipo {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        gap: 260px;
         padding-top: 30px;
     }
 
@@ -950,6 +1082,13 @@ h4 {
     .div-productos h3 {
         text-align: center;
         padding-left: 0;
+    }
+
+    .botones-equipo {
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        padding-top: 30px;
     }
 
     .productos {
@@ -1000,6 +1139,13 @@ h4 {
         margin: 0 auto;
     }
 
+    .botones-equipo {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 10px;
+    }
+
 
     .principal {
         padding-top: 50px;
@@ -1028,6 +1174,7 @@ h4 {
         width: 100%;
     }
 
+
     @media screen and (max-width:360px) {
 
         .container {
@@ -1036,6 +1183,10 @@ h4 {
         }
 
         .principal .div1 ul {
+            text-align: center;
+        }
+
+        .principal .div1 .boton {
             text-align: center;
         }
 
@@ -1052,6 +1203,11 @@ h4 {
     .seccion-instagram {
         padding: 10px;
     }
+
+    .gallery-container {
+        padding: 5px;
+        gap: 30px;
+    }
 }
 
 /*Herramientas*/
@@ -1062,4 +1218,5 @@ h4 {
         height: 215px;
         padding-right: 40px;
     }
+
 }
