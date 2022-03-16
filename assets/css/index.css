@@ -382,7 +382,7 @@ h4 {
 .seccion-equipo .flex-row {
     padding: 20px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 50px;
     border-radius: 50px;
     box-shadow: 20px 20px 60px #bebebe,
@@ -664,8 +664,9 @@ h4 {
 .herramientas-trabajo h1 {
     color: var(--amarillo);
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 130px;
+    padding-bottom: 10px;
+    font-weight: 700;
 }
 
 .fotos-herramientas {
@@ -678,6 +679,60 @@ h4 {
     height: 220px;
     padding: 15px;
 }
+
+.carousel {
+    width: 900px;
+    height: 600px;
+    margin: auto;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--violeta);
+}
+
+.carousel-caption {
+    color: var(--negro);
+    font-weight: 500;
+    font-size: 1.5em;
+    width: 100%;
+    height: 200px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.527);
+}
+
+.carousel-caption p {
+    margin: 0 30px;
+}
+
+.tamaño-img {
+    width: 90rem;
+    height: 60rem;
+}
+
+.h5,
+h5 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.carousel-indicators {
+    margin-bottom: 1.5rem;
+    z-index: 0;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    z-index: 0;
+}
+
 
 /* ----------PÁGINA "TIENDA/shop"---------- */
 
@@ -941,6 +996,61 @@ h4 {
     .footer p {
         font-size: 1.2em;
     }
+
+    .carousel {
+        width: 800px;
+        height: 550px;
+        margin: auto;
+        padding: 30px;
+    }
+
+    .tamaño-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-caption {
+        font-size: 1.5em;
+        width: 740px;
+        height: 200px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+    .carousel {
+        width: 70rem;
+        height: 50rem;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .tamaño-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-caption {
+        font-size: 1em;
+        width: 100%;
+        height: 150px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 1rem;
+    }
+
 }
 
 
@@ -1008,6 +1118,28 @@ h4 {
 
 }
 
+@media screen and (max-width:700px) {
+    .carousel {
+        width: 50rem;
+        height: 40rem;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .carousel-caption {
+        font-size: 1em;
+        width: 100%;
+        height: 150px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 1rem;
+    }
+}
+
 @media screen and (max-width:660px) {
 
 
@@ -1060,7 +1192,34 @@ h4 {
     .footer .footer-texto {
         padding-left: 20px;
     }
+
+
 }
+
+@media screen and (max-width:500px) {
+
+    .carousel {
+        width: 40rem;
+        height: 30rem;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .carousel-caption {
+        font-size: 1em;
+        width: 100%;
+        height: 120px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 1rem;
+    }
+
+}
+
 
 @media screen and (max-width:540px) {
 
@@ -1129,6 +1288,42 @@ h4 {
         padding-left: 20px;
     }
 
+}
+
+@media screen and (max-width:400px) {
+    .carousel {
+        width: 30rem;
+        height: 25rem;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .carousel-caption {
+        font-size: 0.9em;
+        width: 100%;
+        height: 100px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .carousel-indicators {
+       margin: auto;
+        width: 60px;
+    }
+
+    .h5,
+    h5 {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .carousel-caption p {
+       display:flex;
+       justify-content: center;
+    }
 }
 
 @media screen and (max-width:440px) {
