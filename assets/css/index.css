@@ -677,6 +677,11 @@ h4 {
     border-style: inset;
 }
 
+.card-body-know {
+    padding: 3px;
+    text-align: left;
+}
+
 .foto .profile {
     width: 200px;
     height: 250px;
