@@ -1,0 +1,722 @@
+/*BANNER*/
+
+.home-img {
+    background-image: url(../image/WhatIf.jpg);
+}
+
+/*MAIN*/
+/* SECCIÓN NOSOTROS */
+
+.principal {
+    background-color: $blanco;
+    height: 700px;
+    padding-top: 200px;
+
+    .flex-row {
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+        border-radius: 50px;
+        box-shadow: 20px 20px 60px #bebebe,
+            -20px -20px 60px #ffffff;
+
+        .div1 {
+            width: 500px;
+
+            ul {
+                padding: 10px 0;
+            }
+
+            h3 {
+                color: $rosa;
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.5em;
+                padding: 20px 0px;
+            }
+
+            li {
+                font-size: 1.5em;
+                font-weight: 500;
+                padding: 8px;
+                display: inline;
+
+                a:hover {
+                    color: $rosa;
+                    transition: ease-in-out 0.3s;
+                }
+            }
+
+            .boton {
+                position: absolute;
+                width: 100px;
+                height: 40px;
+                text-align: center;
+                line-height: 35px;
+
+                &:hover {
+                    svg rect {
+                        stroke-dasharray: 40, 300;
+                        stroke-dashoffset: 167;
+                        stroke: $rosa;
+                    }
+
+                }
+
+                &:hover {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                svg,
+                svg rect {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    fill: transparent;
+                }
+
+                rect {
+                    stroke: $violeta;
+                    stroke-width: 4;
+                    transition: 1s;
+                    stroke-dasharray: 300, 300;
+                    stroke-dashoffset: 0;
+
+                }
+            }
+        }
+
+        .div2 {
+            .img-nosotros {
+                width: 350px;
+                height: 350px;
+            }
+        }
+    }
+}
+
+
+/* SECCIÓN EQUIPO */
+
+.seccion-equipo {
+
+    background-color: $blanco;
+    height: 700px;
+
+    .flex-row {
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+        border-radius: 50px;
+        box-shadow: 20px 20px 60px #bebebe,
+            -20px -20px 60px #ffffff;
+
+        .div-equipo {
+            width: 565px;
+            padding: 20px 0;
+
+            h3 {
+                color: $violeta;
+                font-size: 2.5em;
+                padding: 15px 0;
+            }
+
+            p {
+                font-size: 1.5em;
+            }
+
+            .botones-equipo {
+                display: flex;
+                flex-direction: row;
+                gap: 130px;
+                padding-top: 30px;
+
+                li {
+                    padding-top: 15px;
+                    padding-right: 0px;
+                    padding-bottom: 5px;
+                    padding-left: 0px;
+                }
+
+                li a {
+                    font-size: 1.5em;
+                    font-weight: 500;
+
+                    a:hover {
+                        color: $violeta;
+                        transition: ease-in-out 0.3s;
+                    }
+                }
+
+
+                .boton2 {
+                    position: absolute;
+                    width: 110px;
+                    height: 45px;
+                    text-align: center;
+                    line-height: 35px;
+
+                    &:hover {
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    &:hover svg rect {
+                        stroke-dasharray: 40, 300;
+                        stroke-dashoffset: 150;
+                        stroke: $amarillo;
+                    }
+
+                    svg,
+                    svg rect {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        fill: transparent;
+                    }
+
+                    rect {
+                        stroke: $rosa;
+                        stroke-width: 4;
+                        transition: 1s;
+                        stroke-dasharray: 310, 310;
+                        stroke-dashoffset: 0;
+                    }
+                }
+
+                .boton3 {
+                    position: absolute;
+                    width: 150px;
+                    height: 45px;
+                    text-align: center;
+                    line-height: 35px;
+
+                    &:hover svg rect {
+                        stroke-dasharray: 50, 300;
+                        stroke-dashoffset: 107;
+                        stroke: $violeta;
+                    }
+
+                    &:hover {
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    svg,
+                    svg rect {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        fill: transparent;
+                    }
+
+                    svg rect {
+                        stroke: $amarillo;
+                        stroke-width: 4;
+                        transition: 1s;
+                        stroke-dasharray: 390, 390;
+                        stroke-dashoffset: 0;
+                    }
+                }
+            }
+        }
+
+        .div-equipo2 {
+            .img-equipo {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+/* SECCION PRODUCTOS */
+
+.productos {
+    background-image: url(../image/degradado.jpg);
+    background-size: contain;
+    width: 100%;
+    padding: 30px 0;
+    height: 100%;
+
+    .div-productos {
+
+        h3 {
+            font-size: 2.5em;
+            padding-left: 50px;
+            color: $amarillo;
+            font-weight: 700;
+        }
+    }
+
+    .div-productos2 {
+
+        img {
+            width: 25rem;
+            padding: 2rem;
+        }
+
+        ul li {
+            font-size: 1.5em;
+            font-weight: 500;
+            padding-left: 50px;
+
+            a:hover {
+                color: $amarillo;
+                transition: ease-in-out 0.3s;
+            }
+        }
+    }
+}
+
+
+/* Seccion contactos */
+
+.contacto {
+    background-color: $blanco;
+    width: 108em;
+    height: 750px;
+
+    .seccion-contacto {
+        max-width: 100%;
+        padding: 90px 0;
+
+        .div-contacto {
+
+            h3 {
+                color: $rosa;
+                font-size: 2.5em;
+                font-weight: 500;
+                padding: 15px 0;
+                text-align: center;
+                font-weight: 700;
+            }
+
+            h4 {
+                font-size: 1.5em;
+                text-align: center;
+                padding-bottom: 90px;
+            }
+
+            p {
+                font-size: 1.5em;
+            }
+        }
+
+        .div-contacto2 {
+            padding: 80px 0;
+        }
+    }
+}
+
+
+/*MEDIA*/
+
+
+@media screen and (max-width:1200px) {
+
+    .container {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    .productos {
+        .div-productos {
+            h3 {
+                text-align: center;
+            }
+        }
+    
+        .div-productos2 {
+            height: 26rem;
+            padding-top: 40px;
+            padding-left: 80px;
+            padding-bottom: 40px;
+            padding-right: 80px;
+    
+            img {
+                width: 20em;
+            }
+        }
+    } 
+
+    .contacto {
+        width: max-content;
+
+        .seccion-contacto {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .container {
+        max-width: 904px;
+        margin: 0 auto;
+    }
+
+    .productos {
+        .div-productos {
+            h3 {
+                text-align: center;
+            }
+        } 
+    
+        .div-productos2 {
+            height: 26rem;
+            padding: 30px;
+    
+            img {
+                width: 20em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .container {
+        max-width: 780px;
+        margin: 0 auto;
+    }
+
+    .home-img {
+        padding-top: 150px;
+    }
+
+    .seccion-equipo {
+        .flex-row {
+            .div-equipo {
+                .botones-equipo {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 130px;
+                    padding-top: 30px;
+                }
+            }
+        }
+    }
+
+    .productos {
+
+        .div-productos {
+            h3 {
+                text-align: center;
+            }
+        }
+
+        .div-productos2 {
+            height: 26rem;
+            padding: 30px;
+
+            img {
+                width: 17em;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:780px) {
+
+    .container {
+        max-width: 660px;
+        margin: 0 auto;
+    }
+
+    .principal {
+        height: 760px;
+
+        .div1 {
+            p {
+                font-size: 1.3em;
+            }
+        }
+    }
+
+    .seccion-equipo {
+        .flex-row {
+            .div-equipo {
+                p {
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+
+    .productos {
+
+        .div-productos {
+
+            h3 {
+                text-align: center;
+            }
+        }
+
+        .div-productos2 {
+            height: 26rem;
+            padding: 30px;
+
+            ul li a {
+                align-items: flex-start;
+            }
+
+            .maceta-inicio {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:660px) {
+
+    .container {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+
+    .principal {
+        padding-top: 90px;
+        height: 600px;
+
+        h3 {
+            text-align: center;
+        }
+
+        .img-nosotros {
+            display: none;
+        }
+    }
+
+    .seccion-equipo {
+
+        .flex-row {
+
+            .div-equipo {
+
+                h3 {
+                    text-align: center;
+                }
+
+                .botones-equipo {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 260px;
+                    padding-top: 30px;
+                }
+            }
+
+            .div-equipo2 {
+                .img-equipo {
+                    display: none;
+                }
+            }
+
+        }
+    }
+
+
+    .div-productos {
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .div-productos2 {
+        padding-left: 90px;
+
+        .aros-img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .container {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .principal {
+        h3 {
+            padding: 15px 0;
+        }
+    }
+
+    .seccion-equipo {
+        .flex-row {
+            .div-equipo {
+                p {
+                    padding: 20px 0;
+                }
+
+                .botones-equipo {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 150px;
+                    padding-top: 30px;
+                }
+            }
+        }
+    }
+
+    .productos {
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 120px;
+
+        .div-productos {
+            h3 {
+                text-align: center;
+                padding-left: 0;
+            }
+        }
+
+        .div-productos2 {
+            padding-left: 80px;
+            padding-right: 80px;
+
+            ul li {
+                padding-left: 0;
+            }
+
+            .flex-row {
+                justify-content: center;
+            }
+
+            .lapicero-img {
+                display: none;
+            }
+
+            .florero-img {
+                justify-content: center;
+                width: 26rem;
+            }
+
+            .aros-img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:440px) {
+
+    .container {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .seccion-equipo {
+        .flex-row {
+            .div-equipo {
+                .botones-equipo {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+
+
+    .principal {
+        padding-top: 15px;
+
+        .div1 {
+            h3 {
+                font-size: 2em;
+            }
+        }
+
+    }
+
+    .div-equipo {
+        h3 {
+            font-size: 2em;
+        }
+    }
+
+    .productos {
+        .div-productos {
+            h3 {
+                font-size: 2em;
+            }
+        }
+
+        .div-productos2 {
+            padding-left: 40px;
+            padding-right: 30px;
+            width: 300px;
+
+            .florero-img {
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    .container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .principal {
+        .div1 {
+            ul {
+                text-align: center;
+            }
+            .boton {
+                text-align: center;
+            }
+        }
+    }
+
+    
+    .seccion-equipo {
+        .flex-row {
+            .div-equipo {
+                .botones-equipo {
+                    a {
+                        font-size: 1.3em;
+                    }
+                } 
+            } 
+        } 
+    } 
+}

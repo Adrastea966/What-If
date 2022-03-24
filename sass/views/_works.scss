@@ -1,0 +1,92 @@
+/* ----------PÁGINA "TRABAJOS-WORKS"---------- */
+
+
+.btn-primary {
+    color: $negro;
+    background-color: $amarillo;
+    border-color: $amarillo;
+
+    &:hover {
+        color: $rosa;
+        background-color: $blanco;
+        border-color: $blanco;
+    }
+
+    &:focus {
+        color: $rosa;
+        background-color: $blanco;
+        border-color:$blanco;
+        box-shadow: $blanco;
+    }
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 2rem 2rem;
+}
+
+.btn {
+    
+    font-weight: 600;
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+.body-trabajos {
+    background-image: url(../image/FondoTrabajos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.works {
+    h1 {
+        color: $rosa;
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 120px;
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+} 
+
+.div-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    padding: 50px;
+    gap: 15px;
+
+    .item-img {
+        border-radius: 8px;
+        transition: 0.3s ease-in-out;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:hover {
+            filter: opacity(0.9);
+            transform: scale(1.05);
+        }
+    }
+
+    .homero {
+        background-image: url(../image/MateHomero.png);
+    }
+    
+    .corazones {
+        background-image: url(../image/ArosCorazón.png);
+    }
+    
+    .negro {
+        background-image: url(../image/MacetaNegra.png);
+    }
+    
+    .rojo {
+        background-image: url(../image/MacetaParaguas.png);
+    }
+}
+
