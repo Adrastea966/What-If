@@ -20,11 +20,11 @@
     }
 
     .red-social {
+        @include flex(row, flex-end, center, 5px);
         padding-top: 30px;
         padding-left: 0;
         padding-right: 10px;
         padding-bottom: 0;
-        justify-content: flex-end;
 
         a {
             flex-basis: 3%;
@@ -37,16 +37,16 @@
     }
 
     .div-footer {
-        justify-content: space-between;
-
+        @include flex(row, space-between, center, 5px);
+       
         div {
             width: 450px;
         }
     }
 
     .copy {
+        @include flex(row, center, center, 5px);
         padding-top: 120px;
-        justify-content: center;
     }
 }
 

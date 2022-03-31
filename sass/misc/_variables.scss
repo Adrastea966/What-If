@@ -7,3 +7,17 @@ $amarillo: #fefe00;
 $font-primary: "Open Sans", sans-serif;
 $font-secundary: "Roboto", cursive;
 
+$paddings:(
+   xsmall: 0.75rem,
+   small: 1rem,
+   regular: 1.5rem,
+   medium: 2rem,
+   large: 5rem,
+   xlarge: 12rem
+);
+
+@each $var, $val in $paddings {
+    .padd-#{$var} {
+        padding: #{$val};
+    }
+}

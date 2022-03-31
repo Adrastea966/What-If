@@ -7,15 +7,13 @@
     z-index: 1;
     right: 0;
     left: 0;
-    padding: 10px;
 
     .nav-container {
-        display: flex;
+        @include flex(row, space-between, center, 5px);
         height: 100%;
         width: 90%;
         margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
+        
 
         .logo {
             width: 130px;
@@ -46,12 +44,11 @@
                 }
 
                 .link {
-                    font-size: 1.4em;
-                    padding: 1rem;
-                    position: relative;
+                    font-size: 1.6em;
                 }
 
                 .link2:hover {
+                   
                     color: $rosa;
                     transition: ease-in-out 0.3s;
                 }
@@ -78,6 +75,7 @@
                     padding: 15px;
 
                     a:hover {
+                        @extend .link;
                         color: #baafe8;
                     }
 
@@ -139,10 +137,7 @@
         background-image: linear-gradient(to top, #f9ffac, #ffda8e, #ffb19b, #ff90c8, #e78dff);
         width: 100%;
         left: 0;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, space-evenly, center, 5px);
         clip-path: circle(0 at center);
         transition: clip-path 1s ease-in-out;
     }

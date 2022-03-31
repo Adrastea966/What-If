@@ -12,9 +12,7 @@
 }
 
 .fotos-herramientas {
-    display: flex;
-    flex-direction: column;
-
+    
     img {
         width: 360px;
         height: 220px;
@@ -26,6 +24,7 @@
     width: 900px;
     height: 600px;
     margin: auto;
+    margin-top: 60px;
 
     .carousel-caption {
         color: $negro;
@@ -59,10 +58,13 @@
         margin-bottom: 1.5rem;
         z-index: 0;
     }
-
+    
+    
     .tamaño-img {
-        width: 90rem;
-        height: 60rem;
+        width: 40rem;
+        height: 40rem;
+        margin-left: 250px;
+        
     }
 
     .carousel-control-next,
@@ -99,8 +101,7 @@
         }
 
         .tamaño-img {
-            width: 100%;
-            height: 100%;
+            margin-left: 150px;
         }
     }
 }
@@ -126,11 +127,6 @@
         .carousel-indicators {
             margin-bottom: 1rem;
         }
-
-        .tamaño-img {
-            width: 100%;
-            height: 100%;
-        }
     }
 }
 
@@ -152,6 +148,12 @@
 
         .carousel-indicators {
             margin-bottom: 1rem;
+        }
+
+        .tamaño-img {
+            width: 30rem;
+            height: 30rem;
+            margin-left: 100px;
         }
     }
 }
@@ -176,6 +178,10 @@
         .carousel-indicators {
             margin-bottom: 1rem;
         }
+
+        .tamaño-img {
+            margin-left: 30px;
+        }
     }
 }
 
@@ -187,6 +193,10 @@
             height: 215px;
             padding-right: 40px;
         }
+    }
+
+    .tamaño-img {
+        margin-left: 30px;
     }
 }
 
@@ -222,6 +232,12 @@
         .carousel-indicators {
             margin: auto;
             width: 60px;
+        }
+
+        .tamaño-img {
+            width: 25rem;
+            height: 25rem;
+            margin-left: 0;
         }
     }
 }
