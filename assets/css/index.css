@@ -604,7 +604,12 @@ video {
     .productos .flex-row .div-productos h3 {
       text-align: center; }
     .productos .flex-row .div-productos2 img {
-      display: none; } }
+      display: none; }
+  .contacto .seccion-contacto .div-contacto .contact-redes {
+    gap: 30px; }
+    .contacto .seccion-contacto .div-contacto .contact-redes p {
+      font-size: 1.3em;
+      margin-bottom: 100px; } }
 
 @media screen and (max-width: 540px) {
   .container {
@@ -615,20 +620,33 @@ video {
   .absolute .text-p {
     font-size: 1.5em;
     width: 400px; }
-  .principal .flex-row .div1 h3 {
-    padding: 15px 0;
-    width: 300px; }
-  .seccion-equipo .flex-row .div-equipo p {
-    padding: 20px 0; }
-  .seccion-equipo .flex-row .div-equipo .botones-equipo {
-    display: flex;
-    flex-direction: row;
-    gap: 150px;
-    padding-top: 30px; }
-  .productos .flex-row {
-    width: 405px; }
-    .productos .flex-row .div-productos h3 {
-      text-align: center; } }
+  .principal {
+    height: 400px; }
+    .principal .flex-row .div1 h3 {
+      padding: 15px 0;
+      width: 300px; }
+  .seccion-equipo {
+    height: 500px; }
+    .seccion-equipo .flex-row .div-equipo p {
+      padding: 20px 0; }
+    .seccion-equipo .flex-row .div-equipo .botones-equipo {
+      display: flex;
+      flex-direction: row;
+      gap: 150px;
+      padding-top: 30px; }
+  .productos {
+    height: 500px; }
+    .productos .flex-row {
+      width: 405px; }
+      .productos .flex-row .div-productos h3 {
+        text-align: center; }
+  .contacto .seccion-contacto .div-contacto .contact-redes {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center; }
+    .contacto .seccion-contacto .div-contacto .contact-redes p {
+      font-size: 1.4em;
+      margin-bottom: 100px; } }
 
 @media screen and (max-width: 440px) {
   .container {
@@ -640,9 +658,7 @@ video {
     font-size: 1.5em;
     width: 350px; }
   .seccion-equipo .flex-row .div-equipo .botones-equipo {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    gap: 150px;
     padding-top: 10px; }
   .principal {
     padding-top: 15px; }
@@ -683,7 +699,8 @@ video {
       padding-right: 40px; }
     .seccion-equipo .flex-row .div-equipo .botones-equipo {
       text-align: center;
-      width: 200px; }
+      width: 200px;
+      margin-left: 20px; }
       .seccion-equipo .flex-row .div-equipo .botones-equipo a {
         font-size: 1.3em; }
   .productos .flex-row {
