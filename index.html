@@ -30,7 +30,7 @@
                     <img class="logo" src="assets/image/Logo.png"
                         alt="logo de la marca What If. Son 3 formas de color violeta, amarillo y rosa que conforman un círculo."></a>
                 <label for="menu-hamburguesa" class="nav-label">
-                    <img src="assets/image/bx-menu.svg" class="nav-img" alt="">
+                    <img src="assets/image/bx-menu.svg" class="nav-img" alt="menú hamburguesa">
                 </label>
                 <input type="checkbox" id="menu-hamburguesa" class="nav-input">
 
@@ -70,7 +70,7 @@
                         <li class="item">
                             <div>
                                 <a href="https://www.instagram.com/what.if3d/" target="_blank"><img
-                                        src="assets/image/instagramlogo.png" width="20px" alt="logo instagram"></a>
+                                        src="assets/image/instagramlogo.png" width="20px" alt="logo de instagram"></a>
                         </li>
                     </ul>
 
@@ -128,7 +128,7 @@
                 </div>
 
                 <div class="div2">
-                    <img class="img-nosotros" src="assets/image/welcome.svg" alt="imagen">
+                    <img class="img-nosotros" src="assets/image/welcome.svg" alt="foto de nosotros">
                 </div>
 
             </div>
@@ -174,7 +174,7 @@
                 </div>
 
                 <div class="div-equipo2">
-                    <img class="img-equipo" src="assets/image/fotoequipo.svg" alt="foto equipo">
+                    <img class="img-equipo" src="assets/image/fotoequipo.svg" alt="foto de equipo">
                 </div>
 
             </div>
@@ -187,24 +187,36 @@
 
         <section class="productos" id="products">
 
-            <div class="container">
+            <div class="flex-row padd-large">
 
                 <div class="div-productos">
-                    <article>
+                    <article data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                         <h3>Nuestros productos</h3>
+                        <p>Todos nuestros productos están impresos con 
+                            material PLA, es un termoplástico fabricado a 
+                            base de recursos renovables como el almidón
+                            de maíz, raíces de tapioca o caña de azúcar. A 
+                            diferencia de otros materiales de la industria 
+                            hechos principalmente a base de petróleo. 
+                            ¡Podes tener lo que vos quieras, sin hacerle daño
+                            a nuestro planeta.! </p>
                     </article>
+
+                    <div class="boton-tienda">
+                        <ul>
+                            <li>
+                                <a class="boton4" href="assets/pages/shop.html">
+                                    <svg>
+                                        <rect class="rect"></rect>
+                                    </svg>
+                                    Tienda</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="div-productos2">
-                    <img class="aros-img" src="assets/image/aros.jpg" alt="aros llama de fuego en 3d" width="250px">
-                    <img class="florero-img" src="assets/image/floreros 3d.jpg" alt="floreros 3d" width="250px">
-                    <img class="lapicero-img" src="assets/image/lapiceros 3d.jpg" alt="lapicero 3d" width="250px">
-                    <img class="maceta-inicio" src="assets/image/macetas.jpg" alt="macetas 3d" width="250px">
-                    <ul class="flex-row">
-                        <li>
-                            <a href="assets/pages/shop.html">Tienda</a>
-                        </li>
-                    </ul>
+                    <img src="assets/image/ecológico.svg" alt="rollos de PLA" width="300px">
                 </div>
 
             </div>
@@ -219,27 +231,19 @@
 
             <div class="seccion-contacto">
                 <div class="div-contacto">
-                    <article>
-                        <h3 class="padd-regular " data-aos="fade-up" data-aos-anchor-placement="bottom-center">
+                    <article data-aos="fade-right">
+                        <h3 class="padd-regular">
                             Contactanos</h3>
                         <h4>Habla con nosotros</h4>
-                        <p>Si tenes una consulta o te queres poner en contacto con nosotros, escribinos a nuestro email.
+                        <p class="p-principal">Contactá con nosotros si tenes alguna consulta o si querés comprar nuestros productos.
                         </p>
                     </article>
+                    <div class="contact-redes">
+                        <p>what.if3d.impresiones@gmail.com</p>
+                        <p>+54 9 11 5112-7843</p>
+                        <p>what.if3d</p>
+                    </div>
                 </div>
-
-                <div class="div-contacto2">
-                    <form action="" method="GET">
-                        <input type="email" name="email" id="" placeholder="Ingresa tu email">
-                        <br>
-                        <input type="text" name="asunto" id="" placeholder="Asunto">
-                        <br>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <br>
-                        <input type="submit" value="Enviar">
-                    </form>
-                </div>
-
             </div>
 
         </section>

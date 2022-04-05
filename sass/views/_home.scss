@@ -24,7 +24,7 @@ video {
     color: $blanco;
 
     .text-tittle {
-        font-size: 6em;
+        font-size: 7em;
         font-weight: 900;
         padding-bottom: 30px;
     }
@@ -46,10 +46,7 @@ video {
     padding-top: 200px;
 
     .flex-row {
-        @include flex(row, space-around, center, 5px);
-        border-radius: 50px;
-        box-shadow: 20px 20px 60px #bebebe,
-            -20px -20px 60px #ffffff;
+        @include flex(row, space-around, center, 90px);
 
         .div1 {
             width: 500px;
@@ -141,13 +138,10 @@ video {
 .seccion-equipo {
 
     background-color: $blanco;
-    height: 700px;
+    height: 650px;
 
     .flex-row {
-        @include flex(row, space-around, center, 5px);
-        border-radius: 50px;
-        box-shadow: 20px 20px 60px #bebebe,
-            -20px -20px 60px #ffffff;
+        @include flex(row, space-around, center, 90px);
 
         .div-equipo {
             width: 565px;
@@ -278,52 +272,101 @@ video {
             }
         }
     }
-
-
 }
-
-
-
 
 
 /* SECCION PRODUCTOS */
 
 .productos {
-    background-image: url(../image/degradado.jpg);
-    background-size: contain;
-    width: 100%;
-    padding: 30px 0;
-    height: 100%;
+    background-color: $blanco;
+    height: 700px;
 
-    .div-productos {
 
-        h3 {
-            font-size: 2.5em;
-            padding-left: 50px;
-            color: $amarillo;
-            font-weight: 700;
-        }
-    }
+    .flex-row {
+        @include flex(row, space-around, center, 90px);
 
-    .div-productos2 {
+        .div-productos {
 
-        img {
-            width: 25rem;
-            padding: 2rem;
-        }
-
-        ul li {
-            font-size: 1.5em;
-            font-weight: 500;
-            padding-left: 50px;
-
-            a:hover {
+            h3 {
+                font-size: 2.5em;
+                padding: 15px 0;
                 color: $amarillo;
-                transition: ease-in-out 0.3s;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 1.5em;
+                padding: 20px 0px;
+            }
+
+            .boton4 {
+                position: absolute;
+                width: 100px;
+                height: 40px;
+                text-align: center;
+                line-height: 35px;
+                font-size: 1.5em;
+
+                &:hover {
+                    svg rect {
+                        stroke-dasharray: 40, 300;
+                        stroke-dashoffset: 167;
+                        stroke: $rosa;
+                    }
+
+                }
+
+                &:hover {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                svg,
+                svg rect {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    fill: transparent;
+                }
+
+                rect {
+                    stroke: $violeta;
+                    stroke-width: 4;
+                    transition: 1s;
+                    stroke-dasharray: 300, 300;
+                    stroke-dashoffset: 0;
+
+                }
+            }
+        }
+
+        .div-productos2 {
+
+            img {
+                width: 400px;
+                height: 400px;
+            }
+
+            ul li {
+                font-size: 1.5em;
+                font-weight: 500;
+                padding-left: 50px;
+
+                a:hover {
+                    color: $amarillo;
+                    transition: ease-in-out 0.3s;
+                }
             }
         }
     }
 }
+
 
 
 /* Seccion contactos */
@@ -341,20 +384,33 @@ video {
 
             h3 {
                 color: $rosa;
-                font-size: 2.5em;
-                font-weight: 500;
+                font-size: 2.8em;
                 text-align: center;
                 font-weight: 700;
             }
 
             h4 {
-                font-size: 1.5em;
+                font-size: 2em;
                 text-align: center;
                 padding-bottom: 90px;
             }
 
-            p {
-                font-size: 1.5em;
+            .p-principal {
+                font-size: 2em;
+                text-align: center;
+            }
+
+            .contact-redes {
+                padding-top: 90px;
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+                justify-content: center;
+
+                p {
+                    font-size: 1.5em;
+                    margin-bottom: 100px;
+                }
             }
         }
 
@@ -375,26 +431,6 @@ video {
         margin: 0 auto;
     }
 
-    .productos {
-        .div-productos {
-            h3 {
-                text-align: center;
-            }
-        }
-
-        .div-productos2 {
-            height: 26rem;
-            padding-top: 40px;
-            padding-left: 80px;
-            padding-bottom: 40px;
-            padding-right: 80px;
-
-            img {
-                width: 20em;
-            }
-        }
-    }
-
     .contacto {
         width: max-content;
 
@@ -411,23 +447,6 @@ video {
         max-width: 904px;
         margin: 0 auto;
     }
-
-    .productos {
-        .div-productos {
-            h3 {
-                text-align: center;
-            }
-        }
-
-        .div-productos2 {
-            height: 26rem;
-            padding: 30px;
-
-            img {
-                width: 20em;
-            }
-        }
-    }
 }
 
 @media screen and (max-width:900px) {
@@ -435,10 +454,6 @@ video {
     .container {
         max-width: 780px;
         margin: 0 auto;
-    }
-
-    .home-img {
-        padding-top: 150px;
     }
 
     .seccion-equipo {
@@ -453,30 +468,11 @@ video {
             }
         }
     }
-
-    .productos {
-
-        .div-productos {
-            h3 {
-                text-align: center;
-            }
-        }
-
-        .div-productos2 {
-            height: 26rem;
-            padding: 30px;
-
-            img {
-                width: 17em;
-            }
-        }
-    }
-
 }
 
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 800px) {
 
-    video{
+    video {
         margin-top: 80px;
     }
 
@@ -499,47 +495,62 @@ video {
         margin: 0 auto;
     }
 
-    
+
 
     .principal {
-        height: 760px;
+        .flex-row {
 
-        .div1 {
-            p {
-                font-size: 1.3em;
+            gap: 25px;
+
+            .div1 {
+                p {
+                    font-size: 1.3em;
+                }
+            }
+
+            .div2 {
+                .img-nosotros {
+                    width: 250px;
+                    height: 250px;
+                }
             }
         }
     }
 
     .seccion-equipo {
         .flex-row {
+            gap: 25px;
+
             .div-equipo {
                 p {
                     font-size: 1.3em;
+                }
+            }
+
+            .div-equipo2 {
+                .img-equipo {
+                    width: 250px;
+                    height: 250px;
                 }
             }
         }
     }
 
     .productos {
+        .flex-row {
+            gap: 25px;
 
-        .div-productos {
-
-            h3 {
-                text-align: center;
-            }
-        }
-
-        .div-productos2 {
-            height: 26rem;
-            padding: 30px;
-
-            ul li a {
-                align-items: flex-start;
+            .div-productos {
+                p {
+                    font-size: 1.3em;
+                }
             }
 
-            .maceta-inicio {
-                display: none;
+            .div-productos2 {
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
             }
         }
     }
@@ -554,15 +565,27 @@ video {
 
 
     .principal {
+
         padding-top: 90px;
         height: 600px;
 
-        h3 {
-            text-align: center;
-        }
+        .flex-row {
+            .div1 {
+                h3 {
+                    text-align: center;
+                    font-size: 2.5em;
+                }
 
-        .img-nosotros {
-            display: none;
+                p {
+                    font-size: 1.3em;
+                }
+            }
+
+            .div2 {
+                .img-nosotros {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -593,18 +616,21 @@ video {
         }
     }
 
+    .productos {
+        .flex-row {
+            width: 525px;
 
-    .div-productos {
-        h3 {
-            text-align: center;
-        }
-    }
+            .div-productos {
+                h3 {
+                    text-align: center;
+                }
+            }
 
-    .div-productos2 {
-        padding-left: 90px;
-
-        .aros-img {
-            display: none;
+            .div-productos2 {
+                img {
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -618,7 +644,7 @@ video {
 
     .absolute {
         .text-tittle {
-            font-size: 3em;
+            font-size: 4em;
         }
 
         .text-p {
@@ -628,8 +654,13 @@ video {
     }
 
     .principal {
-        h3 {
-            padding: 15px 0;
+        .flex-row {
+            .div1 {
+                h3 {
+                    padding: 15px 0;
+                    width: 300px;
+                }
+            }
         }
     }
 
@@ -651,41 +682,17 @@ video {
     }
 
     .productos {
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-bottom: 120px;
 
-        .div-productos {
-            h3 {
-                text-align: center;
-                padding-left: 0;
-            }
-        }
+        .flex-row {
 
-        .div-productos2 {
-            padding-left: 80px;
-            padding-right: 80px;
+            width: 405px;
 
-            ul li {
-                padding-left: 0;
+            .div-productos {
+                h3 {
+                    text-align: center;
+                }
             }
 
-            .flex-row {
-                justify-content: center;
-            }
-
-            .lapicero-img {
-                display: none;
-            }
-
-            .florero-img {
-                justify-content: center;
-                width: 26rem;
-            }
-
-            .aros-img {
-                display: none;
-            }
         }
     }
 }
@@ -725,35 +732,38 @@ video {
     .principal {
         padding-top: 15px;
 
-        .div1 {
-            h3 {
-                font-size: 2em;
+        .flex-row {
+            .div1 {
+                h3 {
+                    font-size: 2em;
+                }
             }
         }
-
     }
 
-    .div-equipo {
-        h3 {
-            font-size: 2em;
+    .seccion-equipo {
+        .flex-row {
+            .div-equipo {
+                h3 {
+                    font-size: 2em;
+                }
+
+                p {
+                    width: 300px;
+                }
+            }
         }
     }
 
     .productos {
-        .div-productos {
-            h3 {
-                font-size: 2em;
-            }
-        }
-
-        .div-productos2 {
-            padding-left: 40px;
-            padding-right: 30px;
+        .flex-row {
             width: 300px;
 
-            .florero-img {
-                justify-content: center;
-                width: 100%;
+            .div-productos {
+                h3 {
+                    font-size: 2em;
+                    width: 300px;
+                }
             }
         }
     }
@@ -779,13 +789,19 @@ video {
     }
 
     .principal {
-        .div1 {
-            ul {
-                text-align: center;
-            }
+        .flex-row {
+            justify-content: center;
 
-            .boton {
-                text-align: center;
+            .div1 {
+                ul {
+                    text-align: center;
+                    width: 200px;
+                }
+
+                p {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
             }
         }
     }
@@ -793,11 +809,40 @@ video {
 
     .seccion-equipo {
         .flex-row {
+            justify-content: center;
+
             .div-equipo {
+
+                p {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+
                 .botones-equipo {
+                    text-align: center;
+                    width: 200px;
+
                     a {
                         font-size: 1.3em;
                     }
+                }
+            }
+        }
+    }
+
+    .productos {
+        .flex-row {
+            justify-content: center;
+
+            .div-productos {
+                p {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+
+                ul {
+                    width: 200px;
+                    text-align: center;
                 }
             }
         }

@@ -247,7 +247,7 @@ video {
   justify-content: center;
   color: #fff; }
   .absolute .text-tittle {
-    font-size: 6em;
+    font-size: 7em;
     font-weight: 900;
     padding-bottom: 30px; }
   .absolute .text-p {
@@ -267,9 +267,7 @@ video {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 5px;
-    border-radius: 50px;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; }
+    gap: 90px; }
     .principal .flex-row .div1 {
       width: 500px; }
       .principal .flex-row .div1 ul {
@@ -326,15 +324,13 @@ video {
 /* SECCIÓN EQUIPO */
 .seccion-equipo {
   background-color: #fff;
-  height: 700px; }
+  height: 650px; }
   .seccion-equipo .flex-row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 5px;
-    border-radius: 50px;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; }
+    gap: 90px; }
     .seccion-equipo .flex-row .div-equipo {
       width: 565px;
       padding: 20px 0; }
@@ -428,26 +424,64 @@ video {
 
 /* SECCION PRODUCTOS */
 .productos {
-  background-image: url(../image/degradado.jpg);
-  background-size: contain;
-  width: 100%;
-  padding: 30px 0;
-  height: 100%; }
-  .productos .div-productos h3 {
-    font-size: 2.5em;
-    padding-left: 50px;
-    color: #fefe00;
-    font-weight: 700; }
-  .productos .div-productos2 img {
-    width: 25rem;
-    padding: 2rem; }
-  .productos .div-productos2 ul li {
-    font-size: 1.5em;
-    font-weight: 500;
-    padding-left: 50px; }
-    .productos .div-productos2 ul li a:hover {
+  background-color: #fff;
+  height: 700px; }
+  .productos .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 90px; }
+    .productos .flex-row .div-productos h3 {
+      font-size: 2.5em;
+      padding: 15px 0;
       color: #fefe00;
-      transition: ease-in-out 0.3s; }
+      font-weight: 700; }
+    .productos .flex-row .div-productos p {
+      font-size: 1.5em;
+      padding: 20px 0px; }
+    .productos .flex-row .div-productos .boton4 {
+      position: absolute;
+      width: 100px;
+      height: 40px;
+      text-align: center;
+      line-height: 35px;
+      font-size: 1.5em; }
+      .productos .flex-row .div-productos .boton4:hover svg rect {
+        stroke-dasharray: 40, 300;
+        stroke-dashoffset: 167;
+        stroke: #ff1a6d; }
+      .productos .flex-row .div-productos .boton4:hover {
+        text-transform: uppercase;
+        font-weight: 600;
+        background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .productos .flex-row .div-productos .boton4 svg,
+      .productos .flex-row .div-productos .boton4 svg rect {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        fill: transparent; }
+      .productos .flex-row .div-productos .boton4 rect {
+        stroke: #6300ff;
+        stroke-width: 4;
+        transition: 1s;
+        stroke-dasharray: 300, 300;
+        stroke-dashoffset: 0; }
+    .productos .flex-row .div-productos2 img {
+      width: 400px;
+      height: 400px; }
+    .productos .flex-row .div-productos2 ul li {
+      font-size: 1.5em;
+      font-weight: 500;
+      padding-left: 50px; }
+      .productos .flex-row .div-productos2 ul li a:hover {
+        color: #fefe00;
+        transition: ease-in-out 0.3s; }
 
 /* Seccion contactos */
 .contacto {
@@ -459,16 +493,25 @@ video {
     padding: 90px 0; }
     .contacto .seccion-contacto .div-contacto h3 {
       color: #ff1a6d;
-      font-size: 2.5em;
-      font-weight: 500;
+      font-size: 2.8em;
       text-align: center;
       font-weight: 700; }
     .contacto .seccion-contacto .div-contacto h4 {
-      font-size: 1.5em;
+      font-size: 2em;
       text-align: center;
       padding-bottom: 90px; }
-    .contacto .seccion-contacto .div-contacto p {
-      font-size: 1.5em; }
+    .contacto .seccion-contacto .div-contacto .p-principal {
+      font-size: 2em;
+      text-align: center; }
+    .contacto .seccion-contacto .div-contacto .contact-redes {
+      padding-top: 90px;
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+      justify-content: center; }
+      .contacto .seccion-contacto .div-contacto .contact-redes p {
+        font-size: 1.5em;
+        margin-bottom: 100px; }
     .contacto .seccion-contacto .div-contacto2 {
       padding: 80px 0; }
 
@@ -477,16 +520,6 @@ video {
   .container {
     max-width: 1080px;
     margin: 0 auto; }
-  .productos .div-productos h3 {
-    text-align: center; }
-  .productos .div-productos2 {
-    height: 26rem;
-    padding-top: 40px;
-    padding-left: 80px;
-    padding-bottom: 40px;
-    padding-right: 80px; }
-    .productos .div-productos2 img {
-      width: 20em; }
   .contacto {
     width: max-content; }
     .contacto .seccion-contacto {
@@ -496,33 +529,17 @@ video {
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 904px;
-    margin: 0 auto; }
-  .productos .div-productos h3 {
-    text-align: center; }
-  .productos .div-productos2 {
-    height: 26rem;
-    padding: 30px; }
-    .productos .div-productos2 img {
-      width: 20em; } }
+    margin: 0 auto; } }
 
 @media screen and (max-width: 900px) {
   .container {
     max-width: 780px;
     margin: 0 auto; }
-  .home-img {
-    padding-top: 150px; }
   .seccion-equipo .flex-row .div-equipo .botones-equipo {
     display: flex;
     flex-direction: row;
     gap: 130px;
-    padding-top: 30px; }
-  .productos .div-productos h3 {
-    text-align: center; }
-  .productos .div-productos2 {
-    height: 26rem;
-    padding: 30px; }
-    .productos .div-productos2 img {
-      width: 17em; } }
+    padding-top: 30px; } }
 
 @media screen and (max-width: 800px) {
   video {
@@ -537,21 +554,27 @@ video {
   .container {
     max-width: 660px;
     margin: 0 auto; }
-  .principal {
-    height: 760px; }
-    .principal .div1 p {
+  .principal .flex-row {
+    gap: 25px; }
+    .principal .flex-row .div1 p {
       font-size: 1.3em; }
-  .seccion-equipo .flex-row .div-equipo p {
-    font-size: 1.3em; }
-  .productos .div-productos h3 {
-    text-align: center; }
-  .productos .div-productos2 {
-    height: 26rem;
-    padding: 30px; }
-    .productos .div-productos2 ul li a {
-      align-items: flex-start; }
-    .productos .div-productos2 .maceta-inicio {
-      display: none; } }
+    .principal .flex-row .div2 .img-nosotros {
+      width: 250px;
+      height: 250px; }
+  .seccion-equipo .flex-row {
+    gap: 25px; }
+    .seccion-equipo .flex-row .div-equipo p {
+      font-size: 1.3em; }
+    .seccion-equipo .flex-row .div-equipo2 .img-equipo {
+      width: 250px;
+      height: 250px; }
+  .productos .flex-row {
+    gap: 25px; }
+    .productos .flex-row .div-productos p {
+      font-size: 1.3em; }
+    .productos .flex-row .div-productos2 img {
+      width: 250px;
+      height: 250px; } }
 
 @media screen and (max-width: 660px) {
   .container {
@@ -560,9 +583,12 @@ video {
   .principal {
     padding-top: 90px;
     height: 600px; }
-    .principal h3 {
-      text-align: center; }
-    .principal .img-nosotros {
+    .principal .flex-row .div1 h3 {
+      text-align: center;
+      font-size: 2.5em; }
+    .principal .flex-row .div1 p {
+      font-size: 1.3em; }
+    .principal .flex-row .div2 .img-nosotros {
       display: none; }
   .seccion-equipo .flex-row .div-equipo h3 {
     text-align: center; }
@@ -573,11 +599,11 @@ video {
     padding-top: 30px; }
   .seccion-equipo .flex-row .div-equipo2 .img-equipo {
     display: none; }
-  .div-productos h3 {
-    text-align: center; }
-  .div-productos2 {
-    padding-left: 90px; }
-    .div-productos2 .aros-img {
+  .productos .flex-row {
+    width: 525px; }
+    .productos .flex-row .div-productos h3 {
+      text-align: center; }
+    .productos .flex-row .div-productos2 img {
       display: none; } }
 
 @media screen and (max-width: 540px) {
@@ -585,12 +611,13 @@ video {
     max-width: 420px;
     margin: 0 auto; }
   .absolute .text-tittle {
-    font-size: 3em; }
+    font-size: 4em; }
   .absolute .text-p {
     font-size: 1.5em;
     width: 400px; }
-  .principal h3 {
-    padding: 15px 0; }
+  .principal .flex-row .div1 h3 {
+    padding: 15px 0;
+    width: 300px; }
   .seccion-equipo .flex-row .div-equipo p {
     padding: 20px 0; }
   .seccion-equipo .flex-row .div-equipo .botones-equipo {
@@ -598,27 +625,10 @@ video {
     flex-direction: row;
     gap: 150px;
     padding-top: 30px; }
-  .productos {
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 120px; }
-    .productos .div-productos h3 {
-      text-align: center;
-      padding-left: 0; }
-    .productos .div-productos2 {
-      padding-left: 80px;
-      padding-right: 80px; }
-      .productos .div-productos2 ul li {
-        padding-left: 0; }
-      .productos .div-productos2 .flex-row {
-        justify-content: center; }
-      .productos .div-productos2 .lapicero-img {
-        display: none; }
-      .productos .div-productos2 .florero-img {
-        justify-content: center;
-        width: 26rem; }
-      .productos .div-productos2 .aros-img {
-        display: none; } }
+  .productos .flex-row {
+    width: 405px; }
+    .productos .flex-row .div-productos h3 {
+      text-align: center; } }
 
 @media screen and (max-width: 440px) {
   .container {
@@ -636,19 +646,17 @@ video {
     padding-top: 10px; }
   .principal {
     padding-top: 15px; }
-    .principal .div1 h3 {
+    .principal .flex-row .div1 h3 {
       font-size: 2em; }
-  .div-equipo h3 {
+  .seccion-equipo .flex-row .div-equipo h3 {
     font-size: 2em; }
-  .productos .div-productos h3 {
-    font-size: 2em; }
-  .productos .div-productos2 {
-    padding-left: 40px;
-    padding-right: 30px;
+  .seccion-equipo .flex-row .div-equipo p {
     width: 300px; }
-    .productos .div-productos2 .florero-img {
-      justify-content: center;
-      width: 100%; } }
+  .productos .flex-row {
+    width: 300px; }
+    .productos .flex-row .div-productos h3 {
+      font-size: 2em;
+      width: 300px; } }
 
 @media screen and (max-width: 360px) {
   .container {
@@ -660,12 +668,32 @@ video {
   .absolute .text-p {
     font-size: 1.3em;
     width: 250px; }
-  .principal .div1 ul {
-    text-align: center; }
-  .principal .div1 .boton {
-    text-align: center; }
-  .seccion-equipo .flex-row .div-equipo .botones-equipo a {
-    font-size: 1.3em; } }
+  .principal .flex-row {
+    justify-content: center; }
+    .principal .flex-row .div1 ul {
+      text-align: center;
+      width: 200px; }
+    .principal .flex-row .div1 p {
+      padding-left: 40px;
+      padding-right: 40px; }
+  .seccion-equipo .flex-row {
+    justify-content: center; }
+    .seccion-equipo .flex-row .div-equipo p {
+      padding-left: 40px;
+      padding-right: 40px; }
+    .seccion-equipo .flex-row .div-equipo .botones-equipo {
+      text-align: center;
+      width: 200px; }
+      .seccion-equipo .flex-row .div-equipo .botones-equipo a {
+        font-size: 1.3em; }
+  .productos .flex-row {
+    justify-content: center; }
+    .productos .flex-row .div-productos p {
+      padding-left: 40px;
+      padding-right: 40px; }
+    .productos .flex-row .div-productos ul {
+      width: 200px;
+      text-align: center; } }
 
 /* ----------PÁGINA "TRABAJOS-WORKS"---------- */
 .btn-primary {
