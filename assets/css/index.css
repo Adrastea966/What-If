@@ -69,7 +69,6 @@ h4 {
 /*PARTIALS*/
 /* Header and navbar */
 .navbar {
-  background: #fff;
   height: 80px;
   position: fixed;
   z-index: 1;
@@ -227,8 +226,35 @@ h4 {
 
 /*VIEWS*/
 /*BANNER*/
-.home-img {
-  background-image: url(../image/WhatIf.jpg); }
+.banner {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden; }
+
+video {
+  width: 100%; }
+
+.absolute {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff; }
+  .absolute .text-tittle {
+    font-size: 6em;
+    font-weight: 900;
+    padding-bottom: 30px; }
+  .absolute .text-p {
+    font-size: 3em;
+    width: 650px;
+    text-align: left;
+    margin: 0 auto; }
 
 /*MAIN*/
 /* SECCIÓN NOSOTROS */
@@ -498,6 +524,15 @@ h4 {
     .productos .div-productos2 img {
       width: 17em; } }
 
+@media screen and (max-width: 800px) {
+  video {
+    margin-top: 80px; }
+  .absolute .text-tittle {
+    font-size: 4em; }
+  .absolute .text-p {
+    font-size: 2em;
+    width: 450px; } }
+
 @media screen and (max-width: 780px) {
   .container {
     max-width: 660px;
@@ -549,6 +584,11 @@ h4 {
   .container {
     max-width: 420px;
     margin: 0 auto; }
+  .absolute .text-tittle {
+    font-size: 3em; }
+  .absolute .text-p {
+    font-size: 1.5em;
+    width: 400px; }
   .principal h3 {
     padding: 15px 0; }
   .seccion-equipo .flex-row .div-equipo p {
@@ -584,6 +624,11 @@ h4 {
   .container {
     max-width: 320px;
     margin: 0 auto; }
+  .absolute .text-tittle {
+    font-size: 3em; }
+  .absolute .text-p {
+    font-size: 1.5em;
+    width: 350px; }
   .seccion-equipo .flex-row .div-equipo .botones-equipo {
     display: flex;
     flex-direction: column;
@@ -609,6 +654,12 @@ h4 {
   .container {
     max-width: 300px;
     margin: 0 auto; }
+  .absolute .text-tittle {
+    font-size: 2.5em;
+    margin-top: 80px; }
+  .absolute .text-p {
+    font-size: 1.3em;
+    width: 250px; }
   .principal .div1 ul {
     text-align: center; }
   .principal .div1 .boton {
