@@ -20,7 +20,7 @@
     }
 
     .red-social {
-        @include flex(row, flex-end, center, 5px);
+        @include flex(row, flex-end, center, 15px);
         padding-top: 30px;
         padding-left: 0;
         padding-right: 10px;

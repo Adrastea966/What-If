@@ -178,7 +178,7 @@ h4 {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
     padding-top: 30px;
     padding-left: 0;
     padding-right: 10px;
@@ -274,7 +274,7 @@ video {
         padding: 10px 0; }
       .principal .flex-row .div1 h3 {
         color: #ff1a6d;
-        font-size: 2.5em; }
+        font-size: 2.8em; }
       .principal .flex-row .div1 p {
         font-size: 1.5em;
         padding: 20px 0px; }
@@ -336,7 +336,7 @@ video {
       padding: 20px 0; }
       .seccion-equipo .flex-row .div-equipo h3 {
         color: #6300ff;
-        font-size: 2.5em;
+        font-size: 2.8em;
         padding: 15px 0; }
       .seccion-equipo .flex-row .div-equipo p {
         font-size: 1.5em; }
@@ -433,9 +433,9 @@ video {
     align-items: center;
     gap: 90px; }
     .productos .flex-row .div-productos h3 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       padding: 15px 0;
-      color: #fefe00;
+      color: #ff1a6d;
       font-weight: 700; }
     .productos .flex-row .div-productos p {
       font-size: 1.5em;
@@ -775,39 +775,243 @@ video {
     background-image: url(../image/MacetaParaguas.png); }
 
 /* ----------PÁGINA "Conocenos/know-us"---------- */
-.titulo-conocenos h1 {
-  color: #6300ff;
-  text-align: center;
-  padding-top: 50px;
-  font-size: 2.5em;
-  font-weight: 700;
-  padding-bottom: 50px; }
+.footer-know {
+  padding-top: 60px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 80px;
+  background-color: #fefe00; }
+  .footer-know h4 {
+    font-weight: 700;
+    font-size: 1.7em;
+    padding-bottom: 20px; }
+  .footer-know p {
+    font-size: 1.4em;
+    display: inline-block; }
+  .footer-know .red-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 10px;
+    padding-bottom: 0; }
+    .footer-know .red-social a {
+      flex-basis: 3%; }
+    .footer-know .red-social img {
+      height: 25px;
+      width: 25px; }
+  .footer-know .div-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px; }
+    .footer-know .div-footer div {
+      width: 450px; }
+  .footer-know .copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-top: 120px; }
 
-.body {
-  background-image: url(../image/colores.jpg);
-  background-size: cover; }
+.main-know {
+  height: 1000px;
+  max-width: 1080px;
+  margin: auto; }
+  .main-know .texto-know {
+    width: 600px;
+    transform: translate(20%, 400%);
+    font-size: 3em;
+    font-weight: 800; }
+  .main-know .seccion-conocenos {
+    display: flex;
+    justify-content: flex-end; }
+    .main-know .seccion-conocenos .Victor {
+      transform: translate(80%, 5%);
+      position: relative;
+      cursor: pointer; }
+      .main-know .seccion-conocenos .Victor:hover > .capa {
+        opacity: 1;
+        visibility: visible; }
+        .main-know .seccion-conocenos .Victor:hover > .capa h3 {
+          margin-top: 90px;
+          margin-bottom: 15px; }
+      .main-know .seccion-conocenos .Victor img {
+        width: 300px;
+        transition: all 500ms ease-in-out;
+        border-radius: 400px; }
+      .main-know .seccion-conocenos .Victor .capa {
+        border-radius: 350px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: rgba(255, 225, 0, 0.764);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+        .main-know .seccion-conocenos .Victor .capa h3 {
+          font-weight: 800;
+          margin-bottom: 120px;
+          transition: all 500ms ease-out;
+          margin-top: 30px;
+          font-size: 2em; }
+        .main-know .seccion-conocenos .Victor .capa p {
+          width: 100%;
+          max-width: 200px;
+          margin: auto;
+          padding-top: 10px;
+          font-weight: 500;
+          font-size: 1.5em;
+          line-height: 1.5; }
+    .main-know .seccion-conocenos .Goyo {
+      transform: translate(-120%, 88%);
+      position: relative;
+      cursor: pointer; }
+      .main-know .seccion-conocenos .Goyo:hover > .capa {
+        opacity: 1;
+        visibility: visible; }
+        .main-know .seccion-conocenos .Goyo:hover > .capa h3 {
+          margin-top: 90px;
+          margin-bottom: 15px; }
+      .main-know .seccion-conocenos .Goyo img {
+        width: 300px;
+        transition: all 500ms ease-in-out;
+        border-radius: 400px; }
+      .main-know .seccion-conocenos .Goyo .capa {
+        border-radius: 350px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: rgba(255, 105, 210, 0.725);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+        .main-know .seccion-conocenos .Goyo .capa h3 {
+          color: #fff;
+          font-weight: 800;
+          margin-bottom: 120px;
+          transition: all 500ms ease-out;
+          margin-top: 30px;
+          font-size: 2em; }
+        .main-know .seccion-conocenos .Goyo .capa p {
+          padding-top: 10px;
+          color: #fff;
+          font-weight: 400;
+          width: 100%;
+          max-width: 200px;
+          margin: auto;
+          padding-top: 10px;
+          font-weight: 500;
+          font-size: 1.5em;
+          line-height: 1.5; }
 
-.foto {
-  width: 300px;
-  height: 350px;
-  padding: 30px;
-  background-color: #fff;
-  border-style: inset; }
-  .foto .card-body-know {
-    padding: 3px;
-    text-align: left; }
-  .foto .profile {
-    width: 200px;
-    height: 250px; }
+/*MEDIA*/
+@media screen and (max-width: 1024px) {
+  .main-know {
+    max-width: 904px;
+    margin: 0 auto;
+    height: 1360px; }
+    .main-know .texto-know {
+      width: 600px;
+      transform: translate(0, 400%);
+      font-size: 3em;
+      font-weight: 800;
+      text-align: center;
+      margin: auto; }
+    .main-know .seccion-conocenos {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      gap: 80px; }
+      .main-know .seccion-conocenos .Victor {
+        transform: translate(0, 140%); }
+      .main-know .seccion-conocenos .Goyo {
+        transform: translate(0, 140%); } }
 
-.victor {
-  padding-bottom: 20px; }
+@media screen and (max-width: 751px) {
+  .main-know .seccion-conocenos {
+    gap: 40px; } }
 
-.tomas {
-  padding-bottom: 20px; }
+@media screen and (max-width: 640px) {
+  .main-know .texto-know {
+    width: 400px;
+    font-size: 2.5em;
+    transform: translate(0%, 300%); }
+  .main-know .seccion-conocenos {
+    gap: 10px; }
+    .main-know .seccion-conocenos .Victor {
+      transform: translate(0, 170%); }
+      .main-know .seccion-conocenos .Victor img {
+        width: 250px; }
+    .main-know .seccion-conocenos .Goyo {
+      transform: translate(0, 170%); }
+      .main-know .seccion-conocenos .Goyo img {
+        width: 250px; } }
 
-.goyo {
-  padding-bottom: 20px; }
+@media screen and (max-width: 540px) {
+  .main-know .texto-know {
+    transform: translate(0%, 200%); }
+  .main-know .seccion-conocenos {
+    gap: 10px; }
+    .main-know .seccion-conocenos .Victor {
+      transform: translate(0, 120%); }
+      .main-know .seccion-conocenos .Victor:hover > .capa h3 {
+        margin-top: 30px; }
+      .main-know .seccion-conocenos .Victor img {
+        width: 220px; }
+      .main-know .seccion-conocenos .Victor .capa p {
+        max-width: 155px;
+        font-size: 1.3em;
+        line-height: 1.5; }
+    .main-know .seccion-conocenos .Goyo {
+      transform: translate(0, 170%); }
+      .main-know .seccion-conocenos .Goyo:hover > .capa h3 {
+        margin-top: 50px; }
+      .main-know .seccion-conocenos .Goyo img {
+        width: 220px; }
+      .main-know .seccion-conocenos .Goyo .capa p {
+        max-width: 155px;
+        font-size: 1.3em;
+        line-height: 1.5; } }
+
+@media screen and (max-width: 451px) {
+  .main-know .seccion-conocenos {
+    gap: 10px; }
+    .main-know .seccion-conocenos .Victor {
+      transform: translate(50%, 120%); }
+      .main-know .seccion-conocenos .Victor:hover > .capa h3 {
+        margin-top: 30px; }
+      .main-know .seccion-conocenos .Victor img {
+        width: 220px; }
+      .main-know .seccion-conocenos .Victor .capa p {
+        max-width: 155px;
+        font-size: 1.3em;
+        line-height: 1.5; }
+    .main-know .seccion-conocenos .Goyo {
+      transform: translate(-50%, 230%); }
+      .main-know .seccion-conocenos .Goyo:hover > .capa h3 {
+        margin-top: 50px; }
+      .main-know .seccion-conocenos .Goyo img {
+        width: 220px; }
+      .main-know .seccion-conocenos .Goyo .capa p {
+        max-width: 155px;
+        font-size: 1.3em;
+        line-height: 1.5; } }
+
+@media screen and (max-width: 400px) {
+  .main-know .texto-know {
+    width: 300px;
+    transform: translate(0, 160%);
+    font-size: 2.5em; } }
 
 /* ----------PÁGINA "Nuestras Herramientas/our-tools"---------- */
 .herramientas-trabajo h1 {

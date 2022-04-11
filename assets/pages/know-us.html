@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="La empresa What If está compuesta por tres integrantes. Conocé a cada uno y su manera de trabajar.">
-    <meta name="keywords" content="3D, IMPRESIÓN 3D, IMPRESORA 3D, WHAT IF, CONOCENOS, NOSOTROS, EMPRENDIMIENTO, GRUPO, TRABAJO EN EQUIPO, METODOLOGÍA DE TRABAJO, ESPECIALIDAD.">
+    <meta name="description"
+        content="La empresa What If está compuesta por tres integrantes. Conocé a cada uno y su manera de trabajar.">
+    <meta name="keywords"
+        content="3D, IMPRESIÓN 3D, IMPRESORA 3D, WHAT IF, CONOCENOS, NOSOTROS, EMPRENDIMIENTO, GRUPO, TRABAJO EN EQUIPO, METODOLOGÍA DE TRABAJO, ESPECIALIDAD.">
     <title>Conocenos</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
@@ -82,59 +85,41 @@
 
     <!--Comienzo del sitio-->
 
-    <main class="main">
 
-        <div class="titulo-conocenos">
-            <h1>Conocenos</h1>
+    <main class="main-know">
+        <div class="texto-know">
+            <p>
+                ¡Conocenos! Este es nuestro
+                equipo y cada uno tiene
+                su especialidad...
+            </p>
         </div>
-
-        <div class="container seccion-conocenos">
-
-            <div class="victor">
-
-                <div class="foto" style="width: 30rem;">
-                    <img src="../image/Víctor.png" class="card-img-top" alt="Imagen de Víctor">
-                    <div class="card-body-know">
-                        <p class="card-text">¡Hola! soy Víctor, estudiante de Diseño Indumentaia y actualmente
-                            trabajando en What If. Yo me encargo del diseño gráfico de la empresa y pintar los productos
-                            con el aerógrafo.</p>
-                    </div>
+        <div class="seccion-conocenos">
+            <div class="Victor">
+                <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="../image/Víctor.svg"
+                    alt="foto de Víctor">
+                <div class="capa">
+                    <h3>Víctor</h3>
+                    <p>¡Hola, soy Víctor! Tengo 22 años, estudio diseño indumentaria y soy el encargado del diseño
+                        gráfico en What If. También me encargo de imprimir los productos y de pintarlos con el aerógrafo
+                        para darles un estilo único a cada uno.</p>
                 </div>
-
             </div>
 
-            <div class="tomas">
-
-                <div class="foto" style="width: 30rem;">
-                    <img src="../image/Tomás.png" class="card-img-top" alt="Imagen de Tomás">
-                    <div class="card-body-know">
-                        <p class="card-text">¡Hola! soy Tomás. Actualmente
-                            trabajando en What If. Yo me encargo del modejale 3D de la empresa y de imprimir los
-                            productos</p>
-                    </div>
+            <div class="Goyo">
+                <img data-aos="fade-down" src="../image/Goyo.svg" alt="foto de Goyo">
+                <div class="capa">
+                    <h3>Goyo</h3>
+                    <p>¡Hola, soy Goyo! Tengo 22 años, actualmente estudio modelaje 3D y trabajo en dos emprendimientos.
+                        Me encargo de imprimir los productos y de fotografiarlos. </p>
                 </div>
-
             </div>
-
-            <div class="goyo">
-
-                <div class="foto" style="width: 30rem;">
-                    <img src="../image/Goyo.png" class="card-img-top" alt="Imagen de Goyo">
-                    <div class="card-body-know">
-                        <p class="card-text">¡Hola! soy Goyo. Actualmente
-                            trabajando en What If. Yo me encargo de sacarle fotos a nuestros productos y publicar las
-                            fotos. </p>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
     </main>
 
     <!--Inicio footer-->
 
-    <footer class="footer">
+    <footer class="footer-know">
         <div class="container">
             <h4>Somos What If</h4>
             <div class="div-footer flex-row">
@@ -153,9 +138,9 @@
                 </div>
             </div>
             <div class="red-social flex-row">
-                <a href="https://www.instagram.com/what.if3d/" target="_blank"><img src="../image/instagramlogo.png"
+                <a href="https://www.instagram.com/what.if3d/" target="_blank"><img src="../image/instagramfooter.png"
                         alt="logo instagram"></a>
-                <img class="wsp" src="../image/wsplogo.png" alt="WhatsApp logo">
+                <img class="wsp" src="../image/wspfooter.png" alt="WhatsApp logo">
             </div>
         </div>
         <div class="copy flex-row">
@@ -164,6 +149,10 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
     <!--Fin de footer-->
