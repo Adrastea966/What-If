@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Además de contar con impresoras 3D, también trabajamos con otras herramientas. Como el aerógrafo, programas de modelado 3D como Fusion 360 y cámaras fotográficas.">
-    <meta name="keywords" content="3D, IMPRESIÓN 3D, IMPRESORA 3D, HERRAMIENTAS, HERRAMIENTAS DE TRABAJO, AERÓGRAFO, CÁMARA, MODELADO 3D, FUSION 360, EQUIPO.">
+    <meta name="description"
+        content="Además de contar con impresoras 3D, también trabajamos con otras herramientas. Como el aerógrafo, programas de modelado 3D como Fusion 360 y cámaras fotográficas.">
+    <meta name="keywords"
+        content="3D, IMPRESIÓN 3D, IMPRESORA 3D, HERRAMIENTAS, HERRAMIENTAS DE TRABAJO, AERÓGRAFO, CÁMARA, MODELADO 3D, FUSION 360, EQUIPO.">
     <title>Nuestras Herramientas</title>
+    <link rel="icon" href="../image/Logo.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
@@ -16,12 +20,11 @@
 <body>
 
     <!--Comienzo header-->
+    <!--Comienzo navbar-->
 
-    <header>
+    <header class="header">
 
-        <!--Comienzo navbar-->
-
-        <nav class="navbar shadow-lg p-3 mb-5 bg-body rounded padd-small">
+        <nav class="navbar shadow-lg padd-small">
             <div class="nav-container">
                 <a href="../../index.html">
                     <img class="logo" src="../../assets/image/Logo.png"
@@ -69,84 +72,204 @@
                                 <a href="https://www.instagram.com/what.if3d/" target="_blank"><img
                                         src="../../assets/image/instagramlogo.png" width="20px"
                                         alt="logo instagram"></a>
+                            </div>
                         </li>
                     </ul>
 
                 </div>
             </div>
         </nav>
-
-        <!--Fin del navbar-->
-
     </header>
+
+    <!--Fin del navbar-->
     <!--Fin de header-->
 
     <!--Comienzo del sitio-->
 
-    <main class="main">
-        <div class="herramientas-trabajo">
-            <h1>Nuestras Herramientas</h1>
-        </div>
+    <main class="container">
+        <section class="tools-1">
+            <div class="aerografo">
 
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../image/aerógrafo.svg" class="tamaño-img" alt="fotografia de aerógrafo">
-                    <div class="carousel-caption">
-                        <h5>Aerógrafo</h5>
-                        <p>En What If utilizamos el aerógrafo para pintar algunos de nuestros productos, para darle un toque personalizado.</p>
+                <div data-aos="fade-right">
+                    <h3>AERÓGRAFO</h3>
+                    <p>HERRAMIENTAS</p>
+                </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                ¿Qué es el aerógrafo?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">El aerógrafo es un instrumento que emplea aire a presión para
+                                dispersar un
+                                pigmento en partículas muy finas. Tiene el aspecto de una estilográfica
+                                grande y se sujeta de forma parecida, con el dedo índice levantado para
+                                controlar el suministro de aire. El aerógrafo se emplea para colorear copias,
+                                retocar positivos y negativos, ocultar las uniones de los collages, añadir
+                                nubes u otros elementos y eliminar defectos o fondos innecesarios.</div>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="../image/fotografo.svg" class="tamaño-img" alt="fotografía de cámara">
-                    <div class="carousel-caption">
-                        <h5>Fotografía</h5>
-                        <p>También utilizamos cámaras para realizar nuestras propias fotografías.</p>
-                    </div>
+
+                <div class="aerografo-img">
+                    <img src="../image/america.jpg" alt="capitán américa 3d  pintado con aerógrafo">
+                    <img src="../image/Dragon.jpg" alt="dragón 3d  pintado con aerógrafo">
+                    <img src="../image/Tanque.jpg" alt="tanque 3d pintado con aerógrafo">
                 </div>
-                <div class="carousel-item">
-                    <img src="../image/diseño3d.svg" class="tamaño-img" alt="fotografía computadora">
-                    <div class="carousel-caption">
-                        <h5>Modelaje 3D</h5>
-                        <p>Realizamos nuestros modelos 3D utilizando un programa para modejale 3D.</p>
-                    </div>
-                </div>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
+
             </div>
-            
-    
-        </div>
 
+            <div class="aerografo-ilus">
+                <img src="../image/Aerógrafo.svg" alt="imagen de un aerógrafo">
+            </div>
+
+        </section>
+
+
+        <section class="tools-2">
+            <div class="fotografia">
+                <div data-aos="fade-left">
+                    <h3>FOTOGRAFÍA</h3>
+                    <p>HERRAMIENTAS</p>
+                </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Set fotográfico
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Nuestro equipo cuenta con un set fotografico propio, para que
+                                nuestros productos se puedan apreciar con la mejor calidad posible.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fotografia-img">
+                    <img src="../image/set1.jpg" alt="set de fotografía1">
+                    <img src="../image/set2.jpg" alt="set de fotografía2">
+                    <img src="../image/set3.jpg" alt="set de fotografía3">
+                </div>
+
+            </div>
+
+            <div class="fotografia-ilus">
+                <img src="../image/fotografía.svg" alt="ilustración de una cámara">
+            </div>
+
+        </section>
+
+        <section class="tools-3">
+            <div class="impresora">
+                <div data-aos="fade-right">
+                    <h3>IMPRESORA 3D</h3>
+                    <p>HERRAMIENTAS</p>
+                </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Impresora 3D
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Una impresora 3D es una máquina capaz de realizar réplicas de
+                                diseños en
+                                3D, creando piezas o maquetas volumétricas a partir de un diseño hecho
+                                por ordenador. Surgen con la idea de convertir archivos de 2D en
+                                prototipos reales o 3D. Actualmente nuestro equipo cuenta con 4 impresoras y estamos
+                                imprimiendo con PLA.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="impresora-img">
+                    <img src="../image/impresora1.jpg" alt="set de fotografía1">
+                    <img src="../image/impresora2.jpg" alt="set de fotografía2">
+                    <img src="../image/impresora3.jpg" alt="set de fotografía3">
+                </div>
+
+            </div>
+
+            <div class="impresora-ilus">
+                <img src="../image/Impresora.svg" alt="ilustración de una impresora 3d">
+            </div>
+
+        </section>
+
+        <section class="tools-4">
+            <div class="modelado">
+                <div data-aos="fade-left">
+                    <h3>MODELADO 3D</h3>
+                    <p>HERRAMIENTAS</p>
+                </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                ¿Qué es el modelado 3d?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">El modelado 3D es el proceso de desarrollo de una representación
+                                matemática de cualquier objeto tridimensional (ya sea inanimado o vivo) a través de un
+                                software especializado. Al producto se le llama modelo 3D. Se puede visualizar como una
+                                imagen bidimensional mediante un proceso llamado renderizado 3D o utilizar en una
+                                simulación
+                                por computadora de fenómenos físicos. El modelo también se puede crear físicamente
+                                usando
+                                dispositivos de impresión 3D.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modelado-img">
+                    <img src="../image/modelado1.jpg" alt="modelado 3d">
+                    <img src="../image/modelado2.jpg" alt="diseño 3d impreso">
+                    <img src="../image/modelado3.jpg" alt="modelado 3d, programa">
+                </div>
+
+            </div>
+
+            <div class="modelado-ilus">
+                <img src="../image/modelado3d.svg" alt="ilustración de un modelo 3d">
+            </div>
+
+        </section>
     </main>
 
     <!--Inicio footer-->
+
     <footer class="footer">
         <div class="container">
             <h4>Somos What If</h4>
-            <div class="div-footer flex-row">
+            <div class="div-footer">
                 <div>
                     <p>
                         Somos una empresa de impresiones 3D que está dispuesta a llevar cualquier proyecto a la
                         realidad. Si
-                        te gustó nuestra web, podes visitar nuestro instagram para poder ver todos nuestros productos.
+                        te gustó nuestra web, podes visitar nuestro instagram para poder ver todos nuestros
+                        productos.
                     </p>
                 </div>
                 <div class="footer-texto">
@@ -156,19 +279,25 @@
 
                 </div>
             </div>
-            <div class="red-social flex-row">
+            <div class="red-social">
                 <a href="https://www.instagram.com/what.if3d/" target="_blank"><img src="../image/instagramfooter.png"
-                        alt="logo instagram"></a>
+                alt="logo instagram"></a>
                 <img class="wsp" src="../image/wspfooter.png" alt="WhatsApp logo">
             </div>
         </div>
-        <div class="copy flex-row">
+        <div class="copy">
             <p>Todos los derechos reservados&copy; 2022</p>
         </div>
     </footer>
+    
     <!--Fin de footer-->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>

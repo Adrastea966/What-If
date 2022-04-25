@@ -10,6 +10,7 @@
     <meta name="keywords"
         content="3D, IMPRESIÓN 3D, IMPRESORA 3D, PLA, PLÁSTICO BIODEGRADABLE, ECOLÓGICO, SOUVENIRS, EVENTOS, DECORACIÓN PARA EL HOGAR, PIEZAS 3D, BUENOS AIRES, MORÓN, ZONA OESTE, TECNOLOGÍA, OBJETO TRIDIMENSIONAL, EMPRENDIMIENTO, REGALOS PERSONALIZADOS, FILAMENTO, ACCESORIOS, RÁPIDO, BUENA CALIDAD, FIGURAS, WHAT IF.">
     <title>What If</title>
+    <link rel="icon" href="assets/image/Logo.svg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -19,22 +20,18 @@
 <body>
 
     <!--Comienzo header-->
+    <!--Comienzo navbar-->
 
-    <header>
+    <header class="header">
 
-        <!--Comienzo navbar-->
-
-        <nav class="navbar shadow-lg mb-5 bg-body rounded padd-small">
+        <nav class="navbar shadow-lg padd-small">
             <div class="nav-container">
                 <a href="index.html">
-                    <img class="logo" src="assets/image/Logo.png"
-                        alt="logo de la marca What If. Son 3 formas de color violeta, amarillo y rosa que conforman un círculo."></a>
+                    <img class="logo" src="assets/image/Logo.png" alt="logo de la marca What If."></a>
                 <label for="menu-hamburguesa" class="nav-label">
                     <img src="assets/image/bx-menu.svg" class="nav-img" alt="menú hamburguesa">
                 </label>
                 <input type="checkbox" id="menu-hamburguesa" class="nav-input">
-
-
                 <div class="nav-menu">
                     <ul class="menu">
                         <li class="item">
@@ -71,31 +68,24 @@
                             <div>
                                 <a href="https://www.instagram.com/what.if3d/" target="_blank"><img
                                         src="assets/image/instagramlogo.png" width="20px" alt="logo de instagram"></a>
+                            </div>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
     </header>
 
     <!--Fin del navbar-->
-
     <!--Fin de header-->
 
     <!--Comienzo del sitio-->
 
-    <div class="banner">
-        <div  data-aos="fade-right" class="absolute">
-            <p class="text-tittle">What If... we make it?</p>
-            <p class="text-p">Somos una empresa de impresiones 3D
-                que está dispuesta a llevar cualquier
-                proyecto a la realidad.</p>
-        </div>
-        <video muted autoplay loop>
-            <source src="assets/image/Banner.mp4">
-        </video>
-    </div>
+    <section class="box section-banner">
+        <video src="assets/image/Banner.mp4" autoplay muted loop></video>
+        <h1>What If... we make it?</h1>
+        <h2>Somos una empresa de impresiones 3D que está dispuesta a llevar cualquier proyecto a la realidad.</h2>
+    </section>
 
     <main class="container padd-xsmall">
 
@@ -104,11 +94,11 @@
 
         <section class="principal" id="about-us">
 
-            <div class="flex-row padd-large">
+            <div class="seccion-principal padd-large">
 
                 <div class="div1">
                     <article data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                        <h3>Un poco sobre nosotros</h3>
+                        <h2>Un poco sobre nosotros</h2>
                         <p> ¡Hola! somos What If, una empresa de impresiones 3D
                             que tiene como objetivo poder realizar cualquier proyecto.
                             El arte de la imaginación no tiene límites, y con la ayuda de
@@ -121,7 +111,7 @@
                                     <svg>
                                         <rect></rect>
                                     </svg>
-                                    Trabajos</a>
+                                Trabajos</a>
                             </li>
                         </ul>
                     </article>
@@ -141,11 +131,11 @@
 
         <section class="seccion-equipo" id="team">
 
-            <div class="flex-row padd-large">
+            <div class="segunda-seccion padd-large">
 
                 <div class="div-equipo">
                     <article data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                        <h3>¿Quiénes somos?</h3>
+                        <h2>¿Quiénes somos?</h2>
                         <p>¿Te interesa saber quiénes participan en este emprendimiento? Hacé clic en "Conocenos" y
                             hechá un vistazo. También; si vas a "Herramientas", te contamos con que herramienta
                             se especializa cada uno, nuestras impresoras y algunos procesos de nuestros productos.
@@ -157,7 +147,7 @@
                                         <svg>
                                             <rect class="rect"></rect>
                                         </svg>
-                                        Conocenos</a>
+                                    Conocenos</a>
                                 </li>
                             </ul>
                             <ul>
@@ -166,7 +156,7 @@
                                         <svg>
                                             <rect></rect>
                                         </svg>
-                                        Herramientas</a>
+                                    Herramientas</a>
                                 </li>
                             </ul>
                         </div>
@@ -187,17 +177,17 @@
 
         <section class="productos" id="products">
 
-            <div class="flex-row padd-large">
+            <div class="tercera-seccion padd-large">
 
                 <div class="div-productos">
                     <article data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                        <h3>Nuestros productos</h3>
-                        <p>Todos nuestros productos están impresos con 
-                            material PLA, es un termoplástico fabricado a 
+                        <h2>Nuestros productos</h2>
+                        <p>Todos nuestros productos están impresos con
+                            material PLA, es un termoplástico fabricado a
                             base de recursos renovables como el almidón
-                            de maíz, raíces de tapioca o caña de azúcar. A 
-                            diferencia de otros materiales de la industria 
-                            hechos principalmente a base de petróleo. 
+                            de maíz, raíces de tapioca o caña de azúcar. A
+                            diferencia de otros materiales de la industria
+                            hechos principalmente a base de petróleo.
                             ¡Podes tener lo que vos quieras, sin hacerle daño
                             a nuestro planeta.! </p>
                     </article>
@@ -209,7 +199,7 @@
                                     <svg>
                                         <rect class="rect"></rect>
                                     </svg>
-                                    Tienda</a>
+                                Tienda</a>
                             </li>
                         </ul>
                     </div>
@@ -223,7 +213,8 @@
 
         </section>
 
-        <!--Termina seccion productos-->
+
+        <!--Termina sección productos-->
 
         <!--Inicio contacto-->
 
@@ -232,10 +223,11 @@
             <div class="seccion-contacto">
                 <div class="div-contacto">
                     <article>
-                        <h3 class="padd-regular">
-                            Contactanos</h3>
-                        <h4>Habla con nosotros</h4>
-                        <p class="p-principal">Contactá con nosotros si tenes alguna consulta o si querés comprar nuestros productos.
+                        <h2 class="padd-regular">
+                            Contactanos</h2>
+                        <h3>Habla con nosotros</h3>
+                        <p>Contactá con nosotros si tenes alguna consulta o si querés comprar
+                            nuestros productos.
                         </p>
                     </article>
                     <div data-aos="fade-right" class="contact-redes">
@@ -257,7 +249,7 @@
     <footer class="footer">
         <div class="container">
             <h4>Somos What If</h4>
-            <div class="div-footer flex-row">
+            <div class="div-footer">
                 <div>
                     <p>
                         Somos una empresa de impresiones 3D que está dispuesta a llevar cualquier proyecto a la
@@ -272,13 +264,13 @@
 
                 </div>
             </div>
-            <div class="red-social flex-row">
-                <a href="https://www.instagram.com/what.if3d/" target="_blank"><img src="assets/image/instagramfooter.png"
-                        alt="logo instagram"></a>
+            <div class="red-social">
+                <a href="https://www.instagram.com/what.if3d/" target="_blank"><img
+                        src="assets/image/instagramfooter.png" alt="logo instagram"></a>
                 <img class="wsp" src="assets/image/wspfooter.png" alt="WhatsApp logo">
             </div>
         </div>
-        <div class="copy flex-row">
+        <div class="copy">
             <p>Todos los derechos reservados&copy; 2022</p>
         </div>
     </footer>
@@ -289,6 +281,7 @@
     <script>
         AOS.init();
     </script>
+    
     <!--Fin de footer-->
 
 </body>

@@ -1,91 +1,119 @@
 /* ----------PÁGINA "TRABAJOS-WORKS"---------- */
 
 
-.btn-primary {
-    color: $negro;
-    background-color: $amarillo;
-    border-color: $amarillo;
 
-    &:hover {
-        color: $rosa;
-        background-color: $blanco;
-        border-color: $blanco;
-    }
-
-    &:focus {
-        color: $rosa;
-        background-color: $blanco;
-        border-color:$blanco;
-        box-shadow: $blanco;
-    }
-}
-
-.card-body {
-    flex: 1 1 auto;
-    padding: 2rem 2rem;
-}
-
-.btn {
-    
-    font-weight: 600;
-    padding: 1.5rem 2rem;
-    font-size: 1.5rem;
-    border-radius: 3rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-
-
-.body-trabajos {
-    background-image: url(../image/FondoTrabajos.jpg);
+.container-works {
+    background-image: url(../../assets/image/FondoTrabajos.jpg);
+    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
 }
 
-.works {
-    h1 {
-        color: $rosa;
-        text-align: center;
-        padding-top: 150px;
-        padding-bottom: 120px;
-        font-size: 2.5em;
-        font-weight: 700;
-    }
-} 
-
-.div-img {
+.grid-container {
+    
+    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-auto-rows: minmax(250px, auto);
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    grid-auto-flow: dense;
 
-    .item-img {
-        border-radius: 8px;
-        transition: 0.3s ease-in-out;
+    .grid-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+
+        background-color: $rosa;
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out;
+
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
 
         &:hover {
             filter: opacity(0.9);
-            transform: scale(1.05);
+            transform: scale(1.04);
         }
     }
 
-    .homero {
-        background-image: url(../image/MateHomero.png);
+    .ancho {
+        grid-column: span 2;
     }
-    
-    .corazones {
-        background-image: url(../image/ArosCorazón.png);
+
+    .alto {
+        grid-row: span 2;
     }
-    
-    .negro {
-        background-image: url(../image/MacetaNegra.png);
+
+    .div-img1 {
+        background-image: url(../../assets/image/florero1.jpg);
     }
-    
-    .rojo {
-        background-image: url(../image/MacetaParaguas.png);
+
+    .div-img2 {
+        background-image: url(../../assets/image/audifonos.jpg);
+    }
+
+    .div-img3 {
+        background-image: url(../../assets/image/Adorno.jpg);
+    }
+
+    .div-img4 {
+        background-image: url(../../assets/image//cargador.jpg);
+    }
+
+    .div-img5 {
+        background-image: url(../../assets/image/celularfunda.jpg);
+    }
+
+    .div-img6 {
+        background-image: url(../../assets/image/florero2.jpg);
+    }
+
+    .div-img7 {
+        background-image: url(../../assets/image/katana.jpg);
+    }
+
+    .div-img8 {
+        background-image: url(../../assets/image/llaveroperro.jpg);
+    }
+
+    .div-img9 {
+        background-image: url(../../assets/image/llaveros.jpg);
+    }
+
+    .div-img10 {
+        background-image: url(../../assets/image/mates.jpg);
+    }
+
+    .div-img11 {
+        background-image: url(../../assets/image/anillo.jpg);
+    }
+
+    .div-img12 {
+        background-image: url(../../assets/image/mascara.jpg);
+    }
+
+    .div-img13 {
+        background-image: url(../../assets/image/play.jpg);
+    }
+
+    .div-img14 {
+        background-image: url(../../assets/image/repuesto.jpg);
+    }
+
+    .div-img15 {
+        background-image: url(../../assets/image/maceta2.png);
+    }
+
+    .div-img16 {
+        background-image: url(../../assets/image/decoracion.jpg);
+    }
+
+    .div-img17 {
+        background-image: url(../../assets/image/maceta1.jpg);
     }
 }
-

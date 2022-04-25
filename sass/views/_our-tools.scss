@@ -1,243 +1,855 @@
 /* ----------PÁGINA "Nuestras Herramientas/our-tools"---------- */
 
-.herramientas-trabajo {
 
-    h1 {
-        color: $amarillo;
-        text-align: center;
-        padding-top: 130px;
-        padding-bottom: 10px;
-        font-weight: 700;
-    }
-}
+.container {
+    overflow: hidden;
 
-.fotos-herramientas {
-    
-    img {
-        width: 360px;
-        height: 220px;
-        padding: 15px;
-    }
-}
-
-.carousel {
-    width: 900px;
-    height: 600px;
-    margin: auto;
-    margin-top: 60px;
-
-    .carousel-caption {
-        color: $negro;
-        font-weight: 500;
-        font-size: 1.5em;
+    .tools-1 {
         width: 100%;
-        height: 200px;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background-color: rgba(255, 255, 255, 0.527);
+        height: 900px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 90px;
+        font-family: 'Poppins', sans-serif;
 
-        p {
-            margin: 0 30px;
+        .aerografo {
+
+            h3 {
+                font-size: 9em;
+                font-weight: 800;
+                color: $amarillo;
+            }
+
+            p {
+                font-size: 3.5em;
+                font-weight: 500;
+                letter-spacing: 25px;
+                padding-left: 13px;
+            }
+
+            .accordion {
+                width: 540px;
+                padding-top: 30px;
+
+                .accordion-button {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $negro;
+                }
+
+                .accordion-body {
+                    font-size: 15px;
+                }
+            }
+
+            .aerografo-img {
+                padding-top: 120px;
+
+
+                img {
+
+                    width: 186px;
+                    border-radius: 10px;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
         }
 
-        .h5,
-        h5 {
-            font-size: 1.6em;
-            margin-bottom: 20px;
-            font-weight: 700;
-            text-transform: uppercase;
+        .aerografo-ilus {
+            width: 470px;
+            height: 300px;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                filter: opacity(0.9);
+                transform: scale(1.09);
+            }
         }
     }
 
-    .carousel-indicators [data-bs-target] {
-        background-color: $violeta;
+
+    .tools-2 {
+        height: 900px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 160px;
+        font-family: 'Poppins', sans-serif;
+
+        .fotografia {
+            h3 {
+                font-size: 9em;
+                font-weight: 800;
+                color: $violeta;
+            }
+
+            p {
+                font-size: 3.5em;
+                font-weight: 500;
+                letter-spacing: 25px;
+                padding-left: 13px;
+            }
+
+            .accordion {
+                width: 540px;
+                padding-top: 30px;
+
+                .accordion-button {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $negro;
+                }
+
+                .accordion-body {
+                    font-size: 15px;
+                }
+            }
+
+            .fotografia-img {
+
+                padding-top: 120px;
+
+                img {
+                    width: 186px;
+                    border-radius: 10px;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .fotografia-ilus {
+            width: 470px;
+            height: 300px;
+
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                filter: opacity(0.9);
+                transform: scale(1.09);
+            }
+        }
     }
 
-    .carousel-indicators {
-        margin-bottom: 1.5rem;
-        z-index: 0;
-    }
-    
-    
-    .tamaño-img {
-        width: 40rem;
-        height: 40rem;
-        margin-left: 250px;
-        
+    .tools-3 {
+        align-items: left;
+        height: 900px;
+        display: flex;
+        flex-direction: row;
+        gap: 90px;
+        font-family: 'Poppins', sans-serif;
+
+        .impresora {
+
+            h3 {
+                font-size: 9em;
+                font-weight: 800;
+                color: $rosa;
+            }
+
+            p {
+                font-size: 3.5em;
+                font-weight: 500;
+                letter-spacing: 25px;
+                padding-left: 13px;
+            }
+
+            .accordion {
+                width: 540px;
+                padding-top: 30px;
+
+                .accordion-button {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $negro;
+                }
+
+                .accordion-body {
+                    font-size: 15px;
+                }
+            }
+
+            .impresora-img {
+                padding-top: 120px;
+
+                img {
+                    width: 186px;
+                    border-radius: 10px;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .impresora-ilus {
+            width: 580px;
+            height: 300px;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                filter: opacity(0.9);
+                transform: scale(1.09);
+            }
+        }
     }
 
-    .carousel-control-next,
-    .carousel-control-prev {
-        z-index: 0;
+    .tools-4 {
+        height: 900px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 160px;
+        font-family: 'Poppins', sans-serif;
+
+        .modelado {
+            h3 {
+                font-size: 9em;
+                font-weight: 800;
+                color: $amarillo;
+            }
+
+            p {
+                font-size: 3.5em;
+                font-weight: 500;
+                letter-spacing: 25px;
+                padding-left: 13px;
+            }
+
+            .accordion {
+                width: 540px;
+                padding-top: 30px;
+
+                .accordion-button {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $negro;
+                }
+
+                .accordion-body {
+                    font-size: 15px;
+                }
+            }
+
+            .modelado-img {
+
+                padding-top: 120px;
+
+                img {
+                    width: 186px;
+                    border-radius: 10px;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .modelado-ilus {
+            width: 800px;
+            height: 300px;
+
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                filter: opacity(0.9);
+                transform: scale(1.09);
+            }
+        }
     }
 }
 
-.footer {
-    margin-top: 100px;
-}
 
+/* Media */
 
-/*MEDIA*/
+@media screen and (max-width:1091px) {
 
-@media screen and (max-width:900px) {
-    .carousel {
-        width: 800px;
-        height: 550px;
-        margin: auto;
-        padding: 30px;
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
 
-        .carousel-caption {
-            font-size: 1.5em;
-            width: 740px;
-            height: 200px;
-            right: 0;
-            left: 0;
-            bottom: 0;
+        .tools-1 {
+            gap: 20px;
+
+            .aerografo {
+
+                h3 {
+                    font-size: 7em;
+                }
+
+                p {
+                    font-size: 2em;
+                    letter-spacing: 20px;
+                }
+
+                .accordion {
+                    .accordion-button {
+                        font-size: 15px;
+                    }
+
+                    .accordion-body {
+                        font-size: 12px;
+                    }
+                }
+
+                .aerografo-img {
+                    padding-top: 50px;
+
+                    img {
+                        width: 160px;
+                    }
+                }
+            }
         }
 
-        .carousel-indicators {
-            margin-bottom: 3rem;
+        .tools-2 {
+            gap: 20px;
+
+            .fotografia {
+                text-align: right;
+
+                h3 {
+                    font-size: 7em;
+
+                }
+
+                p {
+                    font-size: 2em;
+                    letter-spacing: 20px;
+                }
+
+                .accordion {
+
+                    .accordion-button {
+                        font-size: 15px;
+                    }
+
+                    .accordion-body {
+                        font-size: 12px;
+                    }
+                }
+
+                .fotografia-img {
+                    img {
+                        width: 160px;
+                    }
+                }
+            }
         }
 
-        .tamaño-img {
-            margin-left: 150px;
+        .tools-3 {
+            gap: 20px;
+
+            .impresora {
+
+                h3 {
+                    font-size: 7em;
+
+                }
+
+                p {
+                    font-size: 2em;
+                    letter-spacing: 20px;
+                }
+
+                .accordion {
+                    .accordion-button {
+                        font-size: 15px;
+                    }
+
+                    .accordion-body {
+                        font-size: 12px;
+                    }
+                }
+
+                .impresora-img {
+                    img {
+                        width: 160px;
+                    }
+                }
+            }
+        }
+
+        .tools-4 {
+            gap: 25px;
+
+            .modelado {
+                text-align: right;
+
+                h3 {
+                    font-size: 7em;
+                }
+
+                p {
+                    font-size: 2em;
+                    letter-spacing: 20px;
+                }
+
+                .accordion {
+                    .accordion-button {
+                        font-size: 15px;
+                    }
+
+                    .accordion-body {
+                        font-size: 12px;
+                    }
+                }
+
+                .modelado-img {
+                    img {
+                        width: 160px;
+                    }
+                }
+            }
         }
     }
 }
 
 @media screen and (max-width:800px) {
 
-    .carousel {
-        width: 70rem;
-        height: 50rem;
-        margin: auto;
-        padding: 10px;
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
 
-        .carousel-caption {
-            font-size: 1em;
-            width: 100%;
-            height: 150px;
-            right: 0;
-            left: 0;
-            bottom: 0;
+        .tools-1 {
+            .aerografo {
+
+                h3 {
+                    font-size: 6em;
+                }
+
+                .accordion {
+                    width: 400px;
+
+                    .accordion-button {
+                        font-size: 15px;
+                    }
+
+                    .accordion-body {
+                        font-size: 12px;
+                    }
+                }
+
+                .aerografo-img {
+                    padding-top: 60px;
+
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
         }
 
+        .tools-2 {
+            .fotografia {
 
-        .carousel-indicators {
-            margin-bottom: 1rem;
+                h3 {
+                    font-size: 6em;
+                }
+
+                .accordion {
+                    width: 400px;
+                }
+
+                .fotografia-img {
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+
+        .tools-3 {
+            .impresora {
+
+                h3 {
+                    font-size: 6em;
+
+                }
+
+                .accordion {
+                    width: 400px;
+                }
+
+                .impresora-img {
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+
+        .tools-4 {
+            .modelado {
+
+                h3 {
+                    font-size: 6em;
+                }
+
+                .accordion {
+                    width: 400px;
+                }
+
+                .modelado-img {
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
         }
     }
 }
+
 
 @media screen and (max-width:700px) {
-    .carousel {
-        width: 50rem;
-        height: 40rem;
-        margin: auto;
-        padding: 10px;
 
-        .carousel-caption {
-            font-size: 1em;
-            width: 100%;
-            height: 150px;
-            right: 0;
-            left: 0;
-            bottom: 0;
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+
+        .tools-1 {
+            .aerografo {
+
+                h3 {
+                    font-size: 5.5em;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    letter-spacing: 20px;
+                }
+
+                .accordion {
+                    width: 350px;
+
+                    .accordion-button {
+                        font-size: 13px;
+                    }
+
+                    .accordion-body {
+                        font-size: 10px;
+                    }
+                }
+            }
         }
 
-        .carousel-indicators {
-            margin-bottom: 1rem;
+        .tools-2 {
+            .fotografia {
+
+                h3 {
+                    font-size: 5.5em;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    letter-spacing: 20px;
+                }
+
+                .accordion {
+                    width: 350px;
+
+                    .accordion-button {
+                        font-size: 13px;
+                    }
+
+                    .accordion-body {
+                        font-size: 10px;
+                    }
+                }
+            }
         }
 
-        .tamaño-img {
-            width: 30rem;
-            height: 30rem;
-            margin-left: 100px;
+        .tools-3 {
+            .impresora {
+
+                h3 {
+                    font-size: 5.5em;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    letter-spacing: 20px;
+                }
+
+                .accordion {
+                    width: 350px;
+
+                    .accordion-button {
+                        font-size: 13px;
+                    }
+
+                    .accordion-body {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .tools-4 {
+            .modelado {
+
+                h3 {
+                    font-size: 5.5em;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    letter-spacing: 20px;
+                }
+
+                .accordion {
+                    width: 350px;
+
+                    .accordion-button {
+                        font-size: 13px;
+                    }
+
+                    .accordion-body {
+                        font-size: 10px;
+                    }
+                }
+            }
         }
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:540px) {
 
-    .carousel {
-        width: 40rem;
-        height: 30rem;
-        margin: auto;
-        padding: 10px;
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
 
-        .carousel-caption {
-            font-size: 1em;
-            width: 100%;
-            height: 120px;
-            right: 0;
-            left: 0;
-            bottom: 0;
+        .tools-1 {
+            .aerografo {
+
+                h3 {
+                    font-size: 6em;
+                }
+
+                p {
+                    font-size: 1.5em;
+                }
+            }
+
+            .aerografo-ilus {
+                img {
+                    display: none;
+                }
+            }
         }
 
-        .carousel-indicators {
-            margin-bottom: 1rem;
+        .tools-2 {
+            .fotografia {
+
+                p {
+                    font-size: 1.5em;
+                }
+            }
+
+            .fotografia-ilus {
+                img {
+                    display: none;
+                }
+            }
         }
 
-        .tamaño-img {
-            margin-left: 30px;
+        .tools-3 {
+            .impresora {
+
+                p {
+                    font-size: 1.5em;
+                }
+            }
+
+            .impresora-ilus {
+                img {
+                    display: none;
+                }
+            }
+        }
+
+        .tools-4 {
+            .modelado {
+
+                p {
+                    font-size: 1.5em;
+                }
+            }
+
+            .modelado-ilus {
+                img {
+                    display: none;
+                }
+            }
         }
     }
 }
 
-@media screen and (max-width:440px) {
 
-    .fotos-herramientas {
-        img {
-            width: 330px;
-            height: 215px;
-            padding-right: 40px;
-        }
-    }
-
-    .tamaño-img {
-        margin-left: 30px;
-    }
-}
 
 @media screen and (max-width:400px) {
-    .carousel {
-        width: 30rem;
-        height: 25rem;
-        margin: auto;
-        padding: 10px;
+    .container {
+        max-width: 300px;
 
-        .carousel-caption {
-            font-size: 0.9em;
-            width: 100%;
-            height: 100px;
-            right: 0;
-            left: 0;
-            bottom: 0;
+        .tools-1 {
+            height: 750px;
 
-            p {
-                display: flex;
-                justify-content: center;
-            }
+            .aerografo {
 
-            .h5,
-            h5 {
-                font-size: 1.2em;
-                margin-bottom: 20px;
-                font-weight: 700;
-                text-transform: uppercase;
+                h3 {
+                    font-size: 4em;
+                    padding-left: 20px;
+                }
+
+                p {
+                    font-size: 1em;
+                    letter-spacing: 14px;
+                    padding-left: 30px;
+                }
+
+                .accordion {
+                    width: 250px;
+
+                    .accordion-button {
+                        font-size: 10px;
+                    }
+
+                    .accordion-body {
+                        font-size: 8px;
+                    }
+                }
+
+                .aerografo-img {
+                    img {
+                        width: 134px;
+                    }
+                }
             }
         }
 
-        .carousel-indicators {
-            margin: auto;
-            width: 60px;
+        .tools-2 {
+            height: 750px;
+
+            .fotografia {
+
+                h3 {
+                    font-size: 4em;
+                    padding-right: 20px;
+                }
+
+                p {
+                    font-size: 1em;
+                    letter-spacing: 14px;
+                    padding-right: 30px;
+                }
+
+                .accordion {
+                    width: 250px;
+
+                    .accordion-button {
+                        font-size: 10px;
+                    }
+
+                    .accordion-body {
+                        font-size: 8px;
+                    }
+                }
+
+                .fotografia-img {
+
+                    img {
+                        width: 134px;
+                    }
+                }
+            }
         }
 
-        .tamaño-img {
-            width: 25rem;
-            height: 25rem;
-            margin-left: 0;
+        .tools-3 {
+            height: 750px;
+
+            .impresora {
+
+                h3 {
+                    font-size: 4em;
+                    padding-left: 20px;
+                }
+
+                p {
+                    font-size: 1em;
+                    letter-spacing: 14px;
+                    padding-left: 30px;
+                }
+
+                .accordion {
+                    width: 250px;
+
+                    .accordion-button {
+                        font-size: 10px;
+                    }
+
+                    .accordion-body {
+                        font-size: 8px;
+                    }
+                }
+
+                .impresora-img {
+
+                    img {
+                        width: 134px;
+                    }
+                }
+            }
+        }
+
+        .tools-4 {
+            height: 750px;
+
+            .modelado {
+
+                h3 {
+                    font-size: 4em;
+                    padding-right: 20px;
+                }
+
+                p {
+                    font-size: 1em;
+                    letter-spacing: 14px;
+                    padding-right: 30px;
+                }
+
+                .accordion {
+                    width: 250px;
+
+                    .accordion-button {
+                        font-size: 10px;
+                    }
+
+                    .accordion-body {
+                        font-size: 8px;
+                    }
+                }
+
+                .modelado-img {
+
+                    img {
+                        width: 134px;
+                    }
+                }
+            }
         }
     }
 }

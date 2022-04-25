@@ -1,58 +1,9 @@
 /* ----------PÁGINA "Conocenos/know-us"---------- */
 
-.footer-know {
-    padding-top: 60px;
-    padding-right: 0;
-    padding-left: 0;
-    padding-bottom: 80px;
-    background-color: $amarillo;
-
-    h4 {
-        font-weight: 700;
-        font-size: 1.7em;
-        padding-bottom: 20px;
-    }
-
-    p {
-        font-size: 1.4em;
-        display: inline-block;
-    }
-
-    .red-social {
-        @include flex(row, flex-end, center, 15px);
-        padding-top: 30px;
-        padding-left: 0;
-        padding-right: 10px;
-        padding-bottom: 0;
-
-        a {
-            flex-basis: 3%;
-        }
-
-        img {
-            height: 25px;
-            width: 25px;
-        }
-    }
-
-    .div-footer {
-        @include flex(row, space-between, center, 5px);
-
-        div {
-            width: 450px;
-        }
-    }
-
-    .copy {
-        @include flex(row, center, center, 5px);
-        padding-top: 120px;
-    }
-}
-
 .main-know {
     height: 1000px;
     max-width: 1080px;
-    margin: auto;
+    margin: 0 auto;
 
     .texto-know {
         width: 600px;
@@ -146,7 +97,7 @@
                 height: 100%;
                 position: absolute;
                 top: 0;
-                background: rgba(255, 105, 210, 0.725);
+                background: rgba(255, 88, 224, 0.764);
                 transition: all 500ms ease-out;
                 opacity: 0;
                 visibility: hidden;
@@ -178,7 +129,7 @@
     }
 }
 
-/*MEDIA*/
+/* Media */
 
 @media screen and (max-width: 1024px) {
     .main-know {

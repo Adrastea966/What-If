@@ -1,51 +1,52 @@
-/*BANNER*/
+/* Banner */
 
-.banner {
-    width: 100%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
-
-video {
-    width: 100%;
-}
-
-.absolute {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    position: absolute;
-    text-align: center;
+.section-banner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    color: $blanco;
+    align-items: center;
+    padding: 110px 100px;
+    gap: 30px;
 
-    .text-tittle {
-        font-size: 7em;
+    h1 {
+        font-size: 6em;
         font-weight: 900;
-        padding-bottom: 30px;
     }
 
-    .text-p {
+    h2 {
         font-size: 3em;
-        width: 650px;
-        text-align: left;
-        margin: 0 auto;
+        width: 630px;
+        font-weight: 600;
     }
 }
 
-/*MAIN*/
-/* SECCIÓN NOSOTROS */
+.box {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: $blanco;
+    text-align: center;
+
+
+    video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+/* Main */
+/* Sección nosotros */
 
 .principal {
     background-color: $blanco;
     height: 700px;
     padding-top: 200px;
 
-    .flex-row {
+    .seccion-principal {
         @include flex(row, space-around, center, 90px);
 
         .div1 {
@@ -55,9 +56,10 @@ video {
                 padding: 10px 0;
             }
 
-            h3 {
+            h2 {
                 color: $rosa;
-                font-size: 2.8em;
+                font-size: 3em;
+                font-weight: 600;
             }
 
             p {
@@ -133,23 +135,24 @@ video {
 }
 
 
-/* SECCIÓN EQUIPO */
+/* Sección equipo */
 
 .seccion-equipo {
 
     background-color: $blanco;
     height: 650px;
 
-    .flex-row {
+    .segunda-seccion {
         @include flex(row, space-around, center, 90px);
 
         .div-equipo {
             width: 565px;
             padding: 20px 0;
 
-            h3 {
+            h2 {
                 color: $violeta;
-                font-size: 2.8em;
+                font-weight: 600;
+                font-size: 3em;
                 padding: 15px 0;
             }
 
@@ -275,23 +278,23 @@ video {
 }
 
 
-/* SECCION PRODUCTOS */
+/* Sección productos */
 
 .productos {
     background-color: $blanco;
     height: 700px;
 
 
-    .flex-row {
+    .tercera-seccion {
         @include flex(row, space-around, center, 90px);
 
         .div-productos {
 
-            h3 {
-                font-size: 2.8em;
+            h2 {
+                font-size: 3em;
                 padding: 15px 0;
                 color: $rosa;
-                font-weight: 700;
+                font-weight: 600;
             }
 
             p {
@@ -369,11 +372,9 @@ video {
 
 
 
-/* Seccion contactos */
+/* Sección contactos */
 
 .contacto {
-    background-color: $blanco;
-    width: 108em;
     height: 750px;
 
     .seccion-contacto {
@@ -382,20 +383,20 @@ video {
 
         .div-contacto {
 
-            h3 {
+            h2 {
                 color: $rosa;
-                font-size: 2.8em;
+                font-size: 4em;
                 text-align: center;
-                font-weight: 700;
+                font-weight: 600;
             }
 
-            h4 {
-                font-size: 2em;
+            h3 {
+                font-size: 2.5em;
                 text-align: center;
                 padding-bottom: 90px;
             }
 
-            .p-principal {
+            p {
                 font-size: 2em;
                 text-align: center;
             }
@@ -421,27 +422,9 @@ video {
 }
 
 
-/*MEDIA*/
+/* Media */
 
-
-@media screen and (max-width:1200px) {
-
-    .container {
-        max-width: 1080px;
-        margin: 0 auto;
-    }
-
-    .contacto {
-        width: max-content;
-
-        .seccion-contacto {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-    }
-}
-
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1090px) {
 
     .container {
         max-width: 904px;
@@ -449,41 +432,23 @@ video {
     }
 }
 
-@media screen and (max-width:900px) {
-
-    .container {
-        max-width: 780px;
-        margin: 0 auto;
-    }
-
-    .seccion-equipo {
-        .flex-row {
-            .div-equipo {
-                .botones-equipo {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 130px;
-                    padding-top: 30px;
-                }
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 800px) {
 
-    video {
-        margin-top: 80px;
-    }
 
-    .absolute {
-        .text-tittle {
-            font-size: 4em;
+    .section-banner {
+
+        gap: 30px;
+
+        h1 {
+            font-size: 5.5em;
+            font-weight: 900;
         }
 
-        .text-p {
-            font-size: 2em;
-            width: 450px;
+        h2 {
+            font-size: 2.5em;
+            width: 630px;
+            font-weight: 200;
         }
     }
 }
@@ -495,10 +460,8 @@ video {
         margin: 0 auto;
     }
 
-
-
     .principal {
-        .flex-row {
+        .seccion-principal {
 
             gap: 25px;
 
@@ -518,7 +481,7 @@ video {
     }
 
     .seccion-equipo {
-        .flex-row {
+        .segunda-seccion {
             gap: 25px;
 
             .div-equipo {
@@ -537,7 +500,7 @@ video {
     }
 
     .productos {
-        .flex-row {
+        .tercera-seccion {
             gap: 25px;
 
             .div-productos {
@@ -554,6 +517,19 @@ video {
             }
         }
     }
+
+    .contacto {
+        .seccion-contacto {
+            .div-contacto {
+                .contact-redes {
+                    p {
+                        font-size: 1.2em;
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:660px) {
@@ -563,21 +539,20 @@ video {
         margin: 0 auto;
     }
 
-
     .principal {
 
-        padding-top: 90px;
+        padding-top: 120px;
         height: 600px;
 
-        .flex-row {
+        .seccion-principal {
             .div1 {
-                h3 {
+                h2 {
                     text-align: center;
-                    font-size: 2.5em;
+                    font-size: 2.8em;
                 }
 
                 p {
-                    font-size: 1.3em;
+                    font-size: 1.4em;
                 }
             }
 
@@ -590,13 +565,15 @@ video {
     }
 
     .seccion-equipo {
-
-        .flex-row {
-
+        .segunda-seccion {
             .div-equipo {
 
-                h3 {
+                h2 {
                     text-align: center;
+                }
+
+                p {
+                    font-size: 1.4em;
                 }
 
                 .botones-equipo {
@@ -612,17 +589,20 @@ video {
                     display: none;
                 }
             }
-
         }
     }
 
     .productos {
-        .flex-row {
-            width: 525px;
+        height: 500px;
 
+        .tercera-seccion {
             .div-productos {
-                h3 {
+                h2 {
                     text-align: center;
+                }
+
+                p {
+                    font-size: 1.4em;
                 }
             }
 
@@ -634,20 +614,34 @@ video {
         }
     }
 
-    .contacto{
-        .seccion-contacto{
-            .div-contacto{
-                .contact-redes{
-                gap: 30px;
-                
+    .contacto {
+        .seccion-contacto {
+            .div-contacto {
+                .contact-redes {
+                    gap: 30px;
 
-                p {
-                    font-size: 1.3em;
-                    margin-bottom: 100px;
-                }
+
+                    p {
+                        font-size: 1.3em;
+                        margin-bottom: 100px;
+                    }
 
                 }
             }
+        }
+    }
+
+    .section-banner {
+
+        h1 {
+            font-size: 5em;
+            font-weight: 900;
+        }
+
+        h2 {
+            font-size: 2em;
+            width: 400px;
+            font-weight: 200;
         }
     }
 }
@@ -659,32 +653,19 @@ video {
         margin: 0 auto;
     }
 
-    .absolute {
-        .text-tittle {
-            font-size: 4em;
-        }
-
-        .text-p {
-            font-size: 1.5em;
-            width: 400px;
-        }
-    }
 
     .principal {
-        height: 400px;
-        .flex-row {
+        .seccion-principal {
             .div1 {
-                h3 {
-                    padding: 15px 0;
-                    width: 300px;
+                h2 {
+                    width: 350px;
                 }
             }
         }
     }
 
     .seccion-equipo {
-        height: 500px;
-        .flex-row {
+        .segunda-seccion {
             .div-equipo {
                 p {
                     padding: 20px 0;
@@ -703,32 +684,35 @@ video {
     .productos {
         height: 500px;
 
-        .flex-row {
+        .tercera-seccion {
 
             width: 405px;
 
             .div-productos {
-                h3 {
+                h2 {
                     text-align: center;
                 }
             }
-
         }
     }
 
-    .contacto{
-        .seccion-contacto{
-            .div-contacto{
-                .contact-redes{
-                gap: 20px;
-                flex-direction: column;
-                align-items: center;
-                
+    .contacto {
 
-                p {
-                    font-size: 1.4em;
-                    margin-bottom: 100px;
-                }
+        height: 850px;
+
+        .seccion-contacto {
+            .div-contacto {
+                .contact-redes {
+
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 60px;
+                    margin: auto;
+
+
+                    p {
+                        font-size: 1.4em;
+                    }
 
                 }
             }
@@ -738,24 +722,8 @@ video {
 
 @media screen and (max-width:440px) {
 
-    .container {
-        max-width: 320px;
-        margin: 0 auto;
-    }
-
-    .absolute {
-        .text-tittle {
-            font-size: 3em;
-        }
-
-        .text-p {
-            font-size: 1.5em;
-            width: 350px;
-        }
-    }
-
     .seccion-equipo {
-        .flex-row {
+        .segunda-seccion {
             .div-equipo {
                 .botones-equipo {
                     gap: 150px;
@@ -765,13 +733,13 @@ video {
         }
     }
 
-
     .principal {
-        padding-top: 15px;
+        padding-top: 100px;
+        height: 500px;
 
-        .flex-row {
+        .seccion-principal {
             .div1 {
-                h3 {
+                h2 {
                     font-size: 2em;
                 }
             }
@@ -779,9 +747,9 @@ video {
     }
 
     .seccion-equipo {
-        .flex-row {
+        .segunda-seccion {
             .div-equipo {
-                h3 {
+                h2 {
                     font-size: 2em;
                 }
 
@@ -793,15 +761,26 @@ video {
     }
 
     .productos {
-        .flex-row {
-            width: 300px;
+
+        .tercera-seccion {
+            width: 200px;
+            margin: 0 auto;
 
             .div-productos {
-                h3 {
+                h2 {
                     font-size: 2em;
                     width: 300px;
                 }
             }
+        }
+    }
+
+    .section-banner {
+
+        h2 {
+            font-size: 2em;
+            width: 270px;
+            font-weight: 200;
         }
     }
 }
@@ -813,20 +792,8 @@ video {
         margin: 0 auto;
     }
 
-    .absolute {
-        .text-tittle {
-            font-size: 2.5em;
-            margin-top: 80px;
-        }
-
-        .text-p {
-            font-size: 1.3em;
-            width: 250px;
-        }
-    }
-
     .principal {
-        .flex-row {
+        .seccion-principal {
             justify-content: center;
 
             .div1 {
@@ -845,7 +812,7 @@ video {
 
 
     .seccion-equipo {
-        .flex-row {
+        .segunda-seccion {
             justify-content: center;
 
             .div-equipo {
@@ -858,7 +825,7 @@ video {
                 .botones-equipo {
                     text-align: center;
                     width: 200px;
-                    margin-left: 20px;
+                    margin-left: 13px;
 
                     a {
                         font-size: 1.3em;
@@ -869,7 +836,7 @@ video {
     }
 
     .productos {
-        .flex-row {
+        .tercera-seccion {
             justify-content: center;
 
             .div-productos {
@@ -883,6 +850,15 @@ video {
                     text-align: center;
                 }
             }
+        }
+    }
+
+    .section-banner {
+
+        h1 {
+            font-size: 4.5em;
+            width: 300px;
+            font-weight: 900;
         }
     }
 }
