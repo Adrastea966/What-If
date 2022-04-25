@@ -684,6 +684,12 @@ h4 {
     .productos .tercera-seccion .div-productos ul {
       width: 200px;
       text-align: center; }
+  .contacto .seccion-contacto .div-contacto h2 {
+    font-size: 3em; }
+  .contacto .seccion-contacto .div-contacto h3 {
+    font-size: 1.8em; }
+  .contacto .seccion-contacto .div-contacto p {
+    font-size: 1.5em; }
   .section-banner h1 {
     font-size: 4.5em;
     width: 300px;
